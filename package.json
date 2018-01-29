@@ -1,0 +1,23 @@
+{
+  "name": "paige_boyer_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "angular-ui-carousel": "^0.1.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paige1381/paige_boyer_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paige1381/paige_boyer_portfolio/issues"
+  },
+  "homepage": "https://github.com/paige1381/paige_boyer_portfolio#readme"
+}

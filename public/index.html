@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html ng-app="portfolio-app">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <title>Paige Boyer</title>
+  </head>
+  <body ng-controller="MainController as ctrl">
+
+  <header>
+    <i class="material-icons" ng-click="ctrl.menu = !ctrl.menu">menu</i>
+  </header>
+
+  <nav ng-class="ctrl.menu? 'slide' : ''" class="menu">
+    <a href="#home" ng-click="ctrl.menu = false" du-smooth-scroll>Home</a>
+    <a href="#about" ng-click="ctrl.menu = false" du-smooth-scroll>About</a>
+    <a href="#portfolio" ng-click="ctrl.menu = false" du-smooth-scroll>Portfolio</a>
+    <a href="#contact" ng-click="ctrl.menu = false" du-smooth-scroll>Contact</a>
+  </nav>
+
+  <main du-scroll-container>
+
+    <section id="home">
+      <div class="content">
+        <h1>Paige Boyer</h1>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>About</h1>
+      <div class="content">
+        <img id="about-img" src="https://images.unsplash.com/photo-1482849297070-f4fae2173efe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a159b2f97bdbe9bb26673589307a4ec6&auto=format&fit=crop&w=1050&q=80">
+        <div id="bio">
+          I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire.
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+      <div class="content">
+        <div class="project">
+          <a href="https://paige1381.github.io/Mancala/">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <div class="carousel-inner img-show" role="listbox">
+                <div class="item active">
+                  <img class="first-slide img-show" src="./css/images/Mancala-2.png">
+                </div>
+                <div class="item">
+                  <img class="second-slide img-show" src="./css/images/Mancala-1.png">
+                </div>
+                <div class="item">
+                  <img class="third-slide img-show" src="./css/images/Mancala-3.png">
+                </div>
+              </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <h2>Mancala</h2>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://pitched-app.herokuapp.com/reviews">
+            <h2>pitched</h2>
+          </a>
+        </div>
+        <div class="project">
+          <a href="http://www.georgiaandmaxwell.com/">
+            <h2>Wedding site</h2>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="content">
+        <div id="contact-blurb">
+          Like my work? You can check out more and connect with me through the links below:
+        </div>
+        <div class="contact-links">
+          <div class="contact-row">
+            <div class="contact-card right bottom">
+              <a href="https://www.linkedin.com/in/thepaigeboyer/">
+                <img src="./css/images/if_linkedin_386655.svg">
+              </a>
+              <a href="https://www.linkedin.com/in/thepaigeboyer/">
+                <p>LinkedIn</p>
+              </a>
+            </div>
+            <div class="contact-card bottom">
+              <a href="https://github.com/paige1381">
+                <img src="./css/images/if_mark-github_298822.svg">
+              </a>
+              <a href="https://github.com/paige1381">
+                <p>GitHub</p>
+              </a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-card right">
+              <a href="https://github.com/paige1381">
+                <img src="./css/images/if_81_2530001.svg">
+              </a>
+              <a href="https://github.com/paige1381">
+                <p>Resume</p>
+              </a>
+            </div>
+            <div class="contact-card">
+              <a href="https://www.instagram.com/pabze/?hl=en">
+                <img src="./css/images/if_instagram_386648.svg">
+              </a>
+              <a href="https://www.instagram.com/pabze/?hl=en">
+                <p>Instagram</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- <div class="main-graphic">
+      <svg style='border:0px solid lightgrey' width=100%>
+
+        <circle
+          cx='260'
+          cy='270'
+          r='30'
+          fill='RGBA(233,213,213, 1)'
+        />
+
+        <circle
+          cx='25'
+          cy='275'
+          r='25'
+          fill='RGBA(249,213,213, 1)'
+        />
+        <circle
+          cx='60'
+          cy='250'
+          r='50'
+          fill='RGBA(233,213,213, .8)'
+        />
+        <circle
+          cx='210'
+          cy='225'
+          r='75'
+          fill='RGBA(217,213,213, 1)'
+        />
+        <circle
+          cx='150'
+          cy='200'
+          r='100'
+          fill='RGBA(201,213,213, .7)'
+        />
+        <circle
+          cx='295'
+          cy='280'
+          r='20'
+          fill='RGBA(185,213,213, 1)'
+        />
+        <circle
+          cx='325'
+          cy='150'
+          r='150'
+          fill='RGBA(185,213,213, .7)'
+        />
+        <circle
+          cx='420'
+          cy='175'
+          r='125'
+          fill='RGBA(201,213,213, .9)'
+        />
+        <circle
+          cx='530'
+          cy='165'
+          r='135'
+          fill='RGBA(217,213,213, .8)'
+        />
+
+        <circle
+          cx='585'
+          cy='220'
+          r='80'
+          fill='RGBA(201,213,213, .7)'
+        />
+        <circle
+          cx='675'
+          cy='190'
+          r='110'
+          fill='RGBA(185,213,213, .8)'
+        />
+        <circle
+          cx='725'
+          cy='260'
+          r='40'
+          fill='RGBA(233,213,213, .7)'
+        />
+
+        <circle
+          cx='780'
+          cy='220'
+          r='80'
+          fill='RGBA(249,213,213, .6)'
+        />
+
+        <circle
+          cx='900'
+          cy='260'
+          r='40'
+          fill='RGBA(217,213,213, .6)'
+        />
+        <circle
+          cx='940'
+          cy='275'
+          r='25'
+          fill='RGBA(233,213,213, .8)'
+        />
+        <circle
+          cx='985'
+          cy='285'
+          r='15'
+          fill='RGBA(249,213,213, 1)'
+        />
+      </svg>
+    </div> -->
+  </body>
+</html>
