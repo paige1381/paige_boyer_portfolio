@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="./css/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="utf-8">
     <script type="text/javascript" src="app.js"></script>
@@ -10,15 +10,22 @@
   </head>
   <body>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
-    </nav>
+  <input type="checkbox" id="menu-toggle">
+  <header>
+    <label for="menu-toggle">
+      <i class="material-icons">menu</i>
+    </label>
+  </header>
 
-    <div class="main-graphic">
-      <svg style='border:0px solid lightgrey' height='300px' width='1000px'>
+  <nav class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+
+    <!-- <div class="main-graphic">
+      <svg style='border:0px solid lightgrey' width=100%>
 
         <circle
           cx='260'
@@ -120,8 +127,7 @@
           r='15'
           fill='RGBA(249,213,213, 1)'
         />
-
       </svg>
-    </div>
+    </div> -->
   </body>
 </html>
