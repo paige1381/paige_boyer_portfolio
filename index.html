@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="portfolio-app">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="utf-8">
-    <script type="text/javascript" src="app.js"></script>
-    <title>Paige Boyer - Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <title>Paige Boyer</title>
   </head>
-  <body>
+  <body ng-controller="MainController as ctrl">
 
-  <input type="checkbox" id="menu-toggle">
   <header>
-    <label for="menu-toggle">
-      <i class="material-icons">menu</i>
-    </label>
+    <i class="material-icons" ng-click="ctrl.menu = !ctrl.menu">menu</i>
   </header>
-
-  <nav class="menu">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+  <nav ng-class="ctrl.menu? 'slide' : ''" class="menu">
+    <a href="#home" ng-click="ctrl.menu = false" du-smooth-scroll>Home</a>
+    <a href="#about" ng-click="ctrl.menu = false" du-smooth-scroll>About</a>
+    <a href="#portfolio" ng-click="ctrl.menu = false" du-smooth-scroll>Portfolio</a>
+    <a href="#contact" ng-click="ctrl.menu = false" du-smooth-scroll>Contact</a>
   </nav>
+
+  <main du-scroll-container>
+
+    <section id="home">
+      <h1>Home</h1>
+      <div class="content">
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>About</h1>
+      <div class="content">
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+      <div class="content">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="content">
+      </div>
+    </section>
+
+  </main>
 
     <!-- <div class="main-graphic">
       <svg style='border:0px solid lightgrey' width=100%>
