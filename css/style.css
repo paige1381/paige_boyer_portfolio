@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Tex Gyre Adventor";
+  src: url("./tex-gyre-adventor/texgyreadventor-regular.otf");
+}
+
+@font-face {
+  font-family: "Tex Gyre Adventor Italic";
+  src: url("./tex-gyre-adventor/texgyreadventor-italic.otf");
+}
+
+@font-face {
+  font-family: "Tex Gyre Adventor Bold";
+  src: url("./tex-gyre-adventor/texgyreadventor-bold.otf");
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+.main-graphic {
+  width: 1000px;
+  margin: 100px auto;
+}
