@@ -15,7 +15,6 @@
 
 @font-face {
   font-family: "Simple Signature";
-  /*src: url("./serialSueTRIAL/SERIALS_T.otf");*/
   src: url("./arsenale-white2/arsenale_white.ttf");
 
 }
@@ -27,16 +26,38 @@ body {
   letter-spacing: 1px;
   color: darkgrey;
   margin: 0;
+  width: 100%;
+}
+
+.home {
+  position: relative;
 }
 
 #name {
   font-family: "Simple Signature";
-  font-size: 140px;
+  font-size: 110px;
   letter-spacing: 4px;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0;
 }
 
-.desktop-nav, .main-graphic {
+.desktop-nav {
   display: none;
+}
+
+.main-graphic {
+  display: flex;
+  width: 100%;
+  margin: 25px auto;
+}
+
+svg {
+  width: 340px;
+  height: 400px;
+  margin: auto;
 }
 
 /*Slide-out menu credit to https://codepen.io/shahbokhari/pen/uDahz*/
@@ -53,8 +74,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
-  background-color: white;
+  z-index: 50;
+  background-color: rgba(201, 213, 213, .8);
 }
 
 nav {
@@ -89,14 +110,14 @@ a:hover {
   height: 100%;
   position: fixed;
   top: 50px;
-  background-color: lightgrey;
+  background-color: rgba(217, 213, 213, .8);
   left: -50%;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
-
+  z-index: 20;
 }
 
 .slide {
@@ -110,10 +131,13 @@ header > .material-icons {
 main {
   padding: 10px;
   margin-top: 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 section {
   margin-bottom: 20px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -131,6 +155,7 @@ section > h1 {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  width: 100%;
 }
 
 #about-img {
@@ -138,7 +163,7 @@ section > h1 {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin: 20px 0 30px 0;
   box-sizing: border-box;
 }
 
@@ -154,6 +179,7 @@ section > h1 {
   margin-bottom: 30px;
   padding: 20px 0;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .project-title {
@@ -174,29 +200,28 @@ section > h1 {
   margin-top: 5px;
 }
 
-.mancala-img {
+.mancala-images, .pitched-images, .wedding-images {
   width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
   box-sizing: border-box;
 }
 
-.pitched-img {
+.pitched-img, .wedding-img, .mancala-img {
   width: 100%;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 50%;
   box-sizing: border-box;
 }
 
-.wedding-img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
-  box-sizing: border-box;
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
 }
 
 .mobile {
-  display: none;
+  display: flex;
 }
 
 .project h2 {
@@ -315,15 +340,98 @@ span {
   border-bottom: 1px solid darkgrey;
 }
 
-/*Desktop*/
-@media (min-width: 1000px) {
+/*Tablet*/
+@media (min-width: 600px) {
+  .main-graphic {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 25px auto;
+  }
+
+  .mancala-images, .pitched-images, .wedding-images {
+    width: 580px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .img-1 {
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 15px;
+  }
+
+  .img-2 {
+    width: 250px;
+    height: 250px;
+    right: 15px;
+    top: 180px;
+  }
+
+  .img-1-alt {
+    width: 350px;
+    height: 350px;
+    top: 0;
+    right: 15px;
+  }
+
+  .img-2-alt {
+    width: 250px;
+    height: 250px;
+    left: 15px;
+    top: 180px;
+  }
+
+  .mancala-img, .pitched-img, .wedding-img {
+    position: absolute;
+  }
+
   .tablet {
     display: flex;
   }
 
+  svg {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+  }
+
+  .home {
+    position: relative;
+  }
+
   #name {
-    align-self: flex-end;
-    margin: 140px 120px 0 0;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0;
+    font-size: 140px;
+  }
+
+  .menu {
+    width: 35%;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1000px) {
+  .desktop {
+    display: flex;
+  }
+
+  svg {
+    width: 1000px;
+    height: 400px;
+  }
+
+  #name {
+    top: 325px;
+    right: 150px;
+    margin: 0;
   }
 
   .home {
@@ -369,17 +477,15 @@ span {
     width: 75%;
   }
 
-  .images {
+  .mancala-images, .pitched-images, .wedding-images {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
   }
 
-  .mancala-img {
+  /*.mancala-img {
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
     object-fit: cover;
   }
 
@@ -397,20 +503,12 @@ span {
     object-fit: scale-down;
     border-radius: 3px;
     box-sizing: border-box;
-  }
+  }*/
 
   .main-graphic {
     display: flex;
     width: 100%;
     margin: 25px auto;
   }
-
-
-
-
-
-
-
-
 
 }

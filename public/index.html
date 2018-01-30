@@ -37,103 +37,159 @@
     <section id="home">
       <div class="home content">
         <div class="main-graphic">
-          <svg style='border:0px solid lightgrey' width=1000px height=400px>
+          <svg>
 
-            <circle
+            <circle class="desktop tablet"
               cx='260'
               cy='250'
               r='30'
               fill='RGBA(233,213,213, 1)'
             />
-
-            <circle
+            <circle class="mobile"
+              cx='280'
+              cy='255'
+              r='30'
+              fill='RGBA(217,213,213, .6)'
+            />
+            <circle class="desktop tablet mobile"
               cx='25'
               cy='250'
               r='25'
               fill='RGBA(249,213,213, 1)'
             />
-            <circle
+            <circle class="mobile"
+              cx='80'
+              cy='275'
+              r='18'
+              fill='RGBA(217,213,213, 1)'
+            />
+            <circle class="desktop tablet mobile"
               cx='60'
               cy='225'
               r='50'
               fill='RGBA(233,213,213, .8)'
             />
-            <circle
+            <circle class="desktop tablet mobile"
               cx='210'
               cy='225'
               r='75'
               fill='RGBA(217,213,213, 1)'
             />
-            <circle
+            <circle class="desktop tablet mobile"
               cx='150'
               cy='225'
               r='100'
               fill='RGBA(201,213,213, .7)'
             />
-            <circle
+            <circle class="desktop"
               cx='295'
               cy='225'
               r='20'
               fill='RGBA(185,213,213, 1)'
             />
-            <circle
+            <circle class="tablet"
+              cx='320'
+              cy='250'
+              r='20'
+              fill='RGBA(185,213,213, .9)'
+            />
+            <circle class="mobile"
+              cx='320'
+              cy='250'
+              r='15'
+              fill='RGBA(233,213,213, 1)'
+            />
+
+
+            <circle class="desktop tablet"
               cx='325'
               cy='225'
               r='150'
               fill='RGBA(185,213,213, .7)'
             />
-            <circle
+            <circle class="desktop"
               cx='420'
               cy='225'
               r='125'
               fill='RGBA(201,213,213, .9)'
             />
-            <circle
+            <circle class="desktop"
+              cx='420'
+              cy='225'
+              r='95'
+              fill='RGBA(201,213,213, .9)'
+            />
+            <circle class="tablet"
+              cx='430'
+              cy='210'
+              r='90'
+              fill='RGBA(201,213,213, .9)'
+            />
+            <circle class="tablet"
+              cx='450'
+              cy='200'
+              r='50'
+              fill='RGBA(233,213,213, .8)'
+            />
+            <circle class="tablet"
+              cx='520'
+              cy='270'
+              r='35'
+              fill='RGBA(233,213,213, .6)'
+            />
+            <circle class="tablet"
+              cx='560'
+              cy='250'
+              r='17'
+              fill='RGBA(233,213,213, 1)'
+            />
+
+            <circle class="desktop"
               cx='530'
               cy='250'
               r='135'
               fill='RGBA(217,213,213, .8)'
             />
 
-            <circle
+            <circle class="desktop"
               cx='585'
               cy='225'
               r='80'
               fill='RGBA(201,213,213, .7)'
             />
-            <circle
+            <circle class="desktop"
               cx='675'
               cy='250'
               r='110'
               fill='RGBA(185,213,213, .8)'
             />
-            <circle
+            <circle class="desktop"
               cx='725'
               cy='225'
               r='40'
               fill='RGBA(233,213,213, .7)'
             />
 
-            <circle
-              cx='780'
-              cy='250'
+            <circle class="desktop"
+              cx='800'
+              cy='260'
               r='80'
               fill='RGBA(249,213,213, .6)'
             />
 
-            <circle
+            <circle class="desktop"
               cx='900'
               cy='225'
               r='40'
               fill='RGBA(217,213,213, .6)'
             />
-            <circle
+            <circle class="desktop"
               cx='940'
               cy='250'
               r='25'
               fill='RGBA(233,213,213, .8)'
             />
-            <circle
+            <circle class="desktop"
               cx='985'
               cy='250'
               r='15'
@@ -141,7 +197,6 @@
             />
           </svg>
         </div>
-
         <h1 id="name">Paige Boyer</h1>
       </div>
     </section>
@@ -149,7 +204,7 @@
     <section id="about">
       <h1>About</h1>
       <div class="content">
-        <img id="about-img" src="https://images.unsplash.com/photo-1482849297070-f4fae2173efe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a159b2f97bdbe9bb26673589307a4ec6&auto=format&fit=crop&w=1050&q=80">
+        <img id="about-img" src="https://i.imgur.com/ybD3O3Q.jpg?3">
         <div id="bio">
           Hi, I'm Paige Boyer, a freelance fullstack web developer residing in Richmond, Virginia. While I do appreciate an organized backend setup, I'm really passionate about designing clean and user-friendly frontends with a hint of pretty. On my site you'll find some of my most recent projects that I completed during my time enrolled in General Assembly's coding bootcamp. Enjoy!
         </div>
@@ -162,9 +217,8 @@
 
         <div class="project">
           <div class="mancala-images">
-            <img class="mancala-img" src="./css/images/Mancala-3.png">
-            <img class="mancala-img tablet mobile" src="./css/images/Mancala-1.png">
-            <img class="mancala-img mobile" src="./css/images/Mancala-3.png">
+            <img class="mancala-img mobile tablet desktop img-1" src="./css/images/Mancala-1.png">
+            <img class="mancala-img tablet desktop img-2" src="./css/images/Mancala-2.png">
           </div>
           <a class="project-title" href="https://paige1381.github.io/Mancala/">
             <h2>Mancala</h2>
@@ -186,10 +240,10 @@
         </div>
 
         <div class="project">
-          <div class="images">
-            <img class="pitched-img" src="./css/images/pitched-1.png">
-            <img class="pitched-img tablet mobile" src="./css/images/pitched-2.png">
-            <img class="pitched-img mobile" src="./css/images/pitched-3.png">
+          <div class="pitched-images">
+            <img class="pitched-img mobile tablet desktop img-1-alt" src="./css/images/pitched-1.png">
+            <img class="pitched-img tablet desktop img-2-alt" src="./css/images/pitched-2.png">
+            <img class="pitched-img desktop img-3" src="./css/images/pitched-3.png">
           </div>
           <a class="project-title-alt" href="https://pitched-app.herokuapp.com/reviews">
             <h2>pitched</h2>
@@ -216,10 +270,11 @@
         </div>
 
         <div class="project">
-          <div class="images">
-            <img class="wedding-img" src="./css/images/wedding-1.png">
-            <img class="wedding-img tablet mobile" src="./css/images/wedding-2.png">
-            <img class="wedding-img mobile" src="./css/images/wedding-3.png">
+          <div class="wedding-images">
+            <img class="wedding-img mobile tablet desktop img-1" src="./css/images/wedding-1.png">
+            <img class="wedding-img tablet desktop img-2" src="./css/images/wedding-2.png">
+            <img class="wedding-img desktop img-3" src="./css/images/wedding-3.png">
+            <img class="wedding-img desktop img-4" src="./css/images/wedding-4.png">
           </div>
           <a class="project-title" href="http://www.georgiaandmaxwell.com/">
             <h2>Wedding website</h2>
@@ -255,36 +310,36 @@
         <div class="contact-links">
           <div class="contact-row">
             <div class="contact-card right bottom">
-              <a href="https://www.linkedin.com/in/thepaigeboyer/">
+              <a href="https://www.linkedin.com/in/thepaigeboyer/" target="_blank">
                 <img src="./css/images/if_linkedin_386655.svg">
               </a>
-              <a href="https://www.linkedin.com/in/thepaigeboyer/">
+              <a href="https://www.linkedin.com/in/thepaigeboyer/" target="_blank">
                 <p>LinkedIn</p>
               </a>
             </div>
             <div class="contact-card bottom">
-              <a href="https://github.com/paige1381">
+              <a href="https://github.com/paige1381" target="_blank">
                 <img src="./css/images/if_mark-github_298822.svg">
               </a>
-              <a href="https://github.com/paige1381">
+              <a href="https://github.com/paige1381" target="_blank">
                 <p>GitHub</p>
               </a>
             </div>
           </div>
           <div class="contact-row">
             <div class="contact-card right">
-              <a href="https://github.com/paige1381">
+              <a href="./PaigeBoyer_Resume_WDI.pdf" target="_blank">
                 <img src="./css/images/if_81_2530001.svg">
               </a>
-              <a href="https://github.com/paige1381">
+              <a href="./PaigeBoyer_Resume_WDI.pdf" target="_blank">
                 <p>Resume</p>
               </a>
             </div>
             <div class="contact-card">
-              <a href="https://www.instagram.com/pabze/?hl=en">
+              <a href="https://www.instagram.com/pabze/?hl=en" target="_blank">
                 <img src="./css/images/if_instagram_386648.svg">
               </a>
-              <a href="https://www.instagram.com/pabze/?hl=en">
+              <a href="https://www.instagram.com/pabze/?hl=en" target="_blank">
                 <p>Instagram</p>
               </a>
             </div>
