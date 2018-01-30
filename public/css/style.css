@@ -27,6 +27,7 @@ body {
   color: darkgrey;
   margin: 0;
   width: 100%;
+  background-color: rgba(249,249,249, .9); 
 }
 
 .home {
@@ -367,7 +368,7 @@ span {
   #bio {
     margin-bottom: 100px;
   }
-  
+
   .mancala-images, .pitched-images, .wedding-images {
     width: 580px;
     height: 600px;
