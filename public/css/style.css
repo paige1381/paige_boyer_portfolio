@@ -428,6 +428,14 @@ span {
 
 /*Desktop*/
 @media (min-width: 1000px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
   .desktop {
     display: flex;
   }
@@ -479,40 +487,82 @@ span {
     padding: 0;
   }
 
-  .mancala-images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 75%;
-  }
-
   .mancala-images, .pitched-images, .wedding-images {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    height: 800px;
   }
 
-  /*.mancala-img {
-    border-radius: 50%;
-    object-fit: cover;
+.pitched-images, .wedding-images {
+  height: 1050px;
+}
+
+.wedding-images {
+  height: 1250px;
+}
+
+.project-circles {
+    width: 1000px;
+    height: 800px;
   }
 
-  .pitched-img {
-    width: 475px;
-    height: 550px;
-    object-fit: scale-down;
-    border-radius: 3px;
-    box-sizing: border-box;
+  .img-1 {
+    width: 580px;
+    height: 580px;
+    top: 0;
+    left: 25px;
+    z-index: 3;
   }
 
-  .wedding-img {
-    width: 475px;
-    height: 550px;
-    object-fit: scale-down;
-    border-radius: 3px;
-    box-sizing: border-box;
-  }*/
+  .img-2 {
+    width: 420px;
+    height: 420px;
+    right: 25px;
+    top: 210px;
+    z-index: 2;
+  }
+
+  .img-1-alt {
+    width: 580px;
+    height: 580px;
+    top: 0;
+    right: 25px;
+    z-index: 3;
+  }
+
+  .img-2-alt {
+    width: 420px;
+    height: 420px;
+    left: 25px;
+    top: 210px;
+    z-index: 2;
+  }
+
+  .img-3 {
+    width: 430px;
+    height: 430px;
+    left: 180px;
+    bottom: 230px;
+    z-index: 3;
+  }
+
+  .img-3-alt {
+    width: 400px;
+    height: 400px;
+    right: 250px;
+    bottom: 50px;
+    z-index: 2;
+  }
+
+  .img-4 {
+    width: 380px;
+    height: 380px;
+    right: 80px;
+    bottom: 70px;
+    z-index: 2;
+  }
 
   .main-graphic {
     display: flex;
