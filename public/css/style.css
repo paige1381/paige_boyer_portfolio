@@ -93,7 +93,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 5px 0;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 a {
@@ -144,10 +144,10 @@ section {
 section > h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
   box-sizing: border-box;
   border-bottom: 1px solid darkgrey;
-  padding: 0 5px;
+  padding: 20px 5px 0 5px;;
 }
 
 .content {
@@ -446,14 +446,24 @@ span {
   }
 
   #name {
-    top: 325px;
+    top: 380px;
     right: 150px;
     margin: 0;
   }
 
+  #about-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #bio {
+    margin-bottom: 100px;
+  }
+
   .home {
-    height: 450px;
+    height: 600px;
     box-sizing: border-box;
+    margin-bottom: 100px;
   }
 
   .desktop-nav {
@@ -495,23 +505,28 @@ span {
     height: 800px;
   }
 
-.pitched-images, .wedding-images {
-  height: 1050px;
-}
-
-.wedding-images {
-  height: 1250px;
-}
-
-.project-circles {
-    width: 1000px;
-    height: 800px;
+  .project {
+    margin-bottom: 100px;
   }
+
+
+  .pitched-images, .wedding-images {
+    height: 1050px;
+  }
+
+  .wedding-images {
+    height: 1250px;
+  }
+
+  .project-circles {
+      width: 1000px;
+      height: 100%;
+    }
 
   .img-1 {
     width: 580px;
     height: 580px;
-    top: 0;
+    top: 40px;
     left: 25px;
     z-index: 3;
   }
@@ -519,15 +534,15 @@ span {
   .img-2 {
     width: 420px;
     height: 420px;
-    right: 25px;
-    top: 210px;
+    right: 35px;
+    top: 230px;
     z-index: 2;
   }
 
   .img-1-alt {
     width: 580px;
     height: 580px;
-    top: 0;
+    top: 40px;
     right: 25px;
     z-index: 3;
   }
@@ -535,8 +550,8 @@ span {
   .img-2-alt {
     width: 420px;
     height: 420px;
-    left: 25px;
-    top: 210px;
+    left: 35px;
+    top: 230px;
     z-index: 2;
   }
 
@@ -552,7 +567,7 @@ span {
     width: 400px;
     height: 400px;
     right: 250px;
-    bottom: 50px;
+    bottom: 65px;
     z-index: 2;
   }
 
