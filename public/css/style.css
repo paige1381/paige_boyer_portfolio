@@ -54,7 +54,7 @@ body {
   margin: 25px auto;
 }
 
-svg {
+.title-cirlces {
   width: 340px;
   height: 400px;
   margin: auto;
@@ -357,32 +357,41 @@ span {
     box-sizing: border-box;
   }
 
+  .project-circles {
+    width: 580px;
+    height: 600px;
+  }
+
   .img-1 {
-    width: 350px;
-    height: 350px;
+    width: 360px;
+    height: 360px;
     top: 0;
     left: 15px;
+    z-index: 3;
   }
 
   .img-2 {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     right: 15px;
-    top: 180px;
+    top: 210px;
+    z-index: 2;
   }
 
   .img-1-alt {
-    width: 350px;
-    height: 350px;
+    width: 360px;
+    height: 360px;
     top: 0;
     right: 15px;
+    z-index: 3;
   }
 
   .img-2-alt {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     left: 15px;
-    top: 180px;
+    top: 210px;
+    z-index: 2;
   }
 
   .mancala-img, .pitched-img, .wedding-img {
@@ -393,7 +402,7 @@ span {
     display: flex;
   }
 
-  svg {
+  .title-cirlces {
     width: 600px;
     height: 400px;
     margin: auto;
@@ -423,7 +432,7 @@ span {
     display: flex;
   }
 
-  svg {
+  .title-cirlces {
     width: 1000px;
     height: 400px;
   }
