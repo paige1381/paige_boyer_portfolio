@@ -17,17 +17,132 @@
   </header>
 
   <nav ng-class="ctrl.menu? 'slide' : ''" class="menu">
-    <a href="#home" ng-click="ctrl.menu = false" du-smooth-scroll>Home</a>
-    <a href="#about" ng-click="ctrl.menu = false" du-smooth-scroll>About</a>
-    <a href="#portfolio" ng-click="ctrl.menu = false" du-smooth-scroll>Portfolio</a>
-    <a href="#contact" ng-click="ctrl.menu = false" du-smooth-scroll>Contact</a>
+    <a class="menu-link" href="#home" ng-click="ctrl.menu = false" du-smooth-scroll>Home</a>
+    <a class="menu-link" href="#about" ng-click="ctrl.menu = false" du-smooth-scroll>About</a>
+    <a class="menu-link" href="#portfolio" ng-click="ctrl.menu = false" du-smooth-scroll>Portfolio</a>
+    <a class="menu-link" href="#contact" ng-click="ctrl.menu = false" du-smooth-scroll>Contact</a>
   </nav>
+
+  <div class="desktop-nav">
+    <div class="desktop-menu">
+      <a class="menu-link" href="#home" du-smooth-scroll>Home</a>
+      <a class="menu-link" href="#about" du-smooth-scroll>About</a>
+      <a class="menu-link" href="#portfolio" du-smooth-scroll>Portfolio</a>
+      <a class="menu-link" href="#contact" du-smooth-scroll>Contact</a>
+    </div>
+  </div>
 
   <main du-scroll-container>
 
     <section id="home">
-      <div class="content">
-        <h1>Paige Boyer</h1>
+      <div class="home content">
+        <div class="main-graphic">
+          <svg style='border:0px solid lightgrey' width=1000px height=400px>
+
+            <circle
+              cx='260'
+              cy='250'
+              r='30'
+              fill='RGBA(233,213,213, 1)'
+            />
+
+            <circle
+              cx='25'
+              cy='250'
+              r='25'
+              fill='RGBA(249,213,213, 1)'
+            />
+            <circle
+              cx='60'
+              cy='225'
+              r='50'
+              fill='RGBA(233,213,213, .8)'
+            />
+            <circle
+              cx='210'
+              cy='225'
+              r='75'
+              fill='RGBA(217,213,213, 1)'
+            />
+            <circle
+              cx='150'
+              cy='225'
+              r='100'
+              fill='RGBA(201,213,213, .7)'
+            />
+            <circle
+              cx='295'
+              cy='225'
+              r='20'
+              fill='RGBA(185,213,213, 1)'
+            />
+            <circle
+              cx='325'
+              cy='225'
+              r='150'
+              fill='RGBA(185,213,213, .7)'
+            />
+            <circle
+              cx='420'
+              cy='225'
+              r='125'
+              fill='RGBA(201,213,213, .9)'
+            />
+            <circle
+              cx='530'
+              cy='250'
+              r='135'
+              fill='RGBA(217,213,213, .8)'
+            />
+
+            <circle
+              cx='585'
+              cy='225'
+              r='80'
+              fill='RGBA(201,213,213, .7)'
+            />
+            <circle
+              cx='675'
+              cy='250'
+              r='110'
+              fill='RGBA(185,213,213, .8)'
+            />
+            <circle
+              cx='725'
+              cy='225'
+              r='40'
+              fill='RGBA(233,213,213, .7)'
+            />
+
+            <circle
+              cx='780'
+              cy='250'
+              r='80'
+              fill='RGBA(249,213,213, .6)'
+            />
+
+            <circle
+              cx='900'
+              cy='225'
+              r='40'
+              fill='RGBA(217,213,213, .6)'
+            />
+            <circle
+              cx='940'
+              cy='250'
+              r='25'
+              fill='RGBA(233,213,213, .8)'
+            />
+            <circle
+              cx='985'
+              cy='250'
+              r='15'
+              fill='RGBA(249,213,213, 1)'
+            />
+          </svg>
+        </div>
+
+        <h1 id="name">Paige Boyer</h1>
       </div>
     </section>
 
@@ -36,7 +151,7 @@
       <div class="content">
         <img id="about-img" src="https://images.unsplash.com/photo-1482849297070-f4fae2173efe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a159b2f97bdbe9bb26673589307a4ec6&auto=format&fit=crop&w=1050&q=80">
         <div id="bio">
-          I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire.
+          Hi, I'm Paige Boyer, a freelance fullstack web developer residing in Richmond, Virginia. While I do appreciate an organized backend setup, I'm really passionate about designing clean and user-friendly frontends with a hint of pretty. On my site you'll find some of my most recent projects that I completed during my time enrolled in General Assembly's coding bootcamp. Enjoy!
         </div>
       </div>
     </section>
@@ -44,51 +159,89 @@
     <section id="portfolio">
       <h1>Portfolio</h1>
       <div class="content">
+
         <div class="project">
-          <a href="https://paige1381.github.io/Mancala/">
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-
-              <div class="carousel-inner img-show" role="listbox">
-                <div class="item active">
-                  <img class="first-slide img-show" src="./css/images/Mancala-2.png">
-                </div>
-                <div class="item">
-                  <img class="second-slide img-show" src="./css/images/Mancala-1.png">
-                </div>
-                <div class="item">
-                  <img class="third-slide img-show" src="./css/images/Mancala-3.png">
-                </div>
-              </div>
-            </div>
-
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-
+          <div class="mancala-images">
+            <img class="mancala-img" src="./css/images/Mancala-3.png">
+            <img class="mancala-img tablet mobile" src="./css/images/Mancala-1.png">
+            <img class="mancala-img mobile" src="./css/images/Mancala-3.png">
+          </div>
+          <a class="project-title" href="https://paige1381.github.io/Mancala/">
             <h2>Mancala</h2>
           </a>
+          <p class="project-date">created Nov 16, 2017</p>
+          <p class="project-links">
+            <a href="https://github.com/paige1381/Mancala">Github repo</a> |
+            <a href="https://paige1381.github.io/Mancala/">Live site</a>
+          </p>
+          <p class="project-desc">
+            An interactive mancala game for your desktop. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
+          </p>
+          <p class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>JQuery</span>
+          </p>
         </div>
+
         <div class="project">
-          <a href="https://pitched-app.herokuapp.com/reviews">
+          <div class="images">
+            <img class="pitched-img" src="./css/images/pitched-1.png">
+            <img class="pitched-img tablet mobile" src="./css/images/pitched-2.png">
+            <img class="pitched-img mobile" src="./css/images/pitched-3.png">
+          </div>
+          <a class="project-title-alt" href="https://pitched-app.herokuapp.com/reviews">
             <h2>pitched</h2>
           </a>
+          <p class="project-date-alt">created Dec 8, 2017</p>
+          <p class="project-links-alt">
+            <a href="https://github.com/paige1381/pitched">Github repo</a> |
+            <a href="https://pitched-app.herokuapp.com/reviews">Live site</a>
+          </p>
+          <p class="project-desc-alt">
+            pitched is a campsite review app, where users can register with the site and post their own pictures and thoughts on camping spots all over the world. Members of the site also have the ability to delete and edit their own reviews and comment on others.
+          </p>
+          <p class="tags-alt">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JQuery</span>
+            <span>Express</span>
+            <span>Bootstrap</span>
+            <span>EJS</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+          </p>
         </div>
+
         <div class="project">
-          <a href="http://www.georgiaandmaxwell.com/">
-            <h2>Wedding site</h2>
+          <div class="images">
+            <img class="wedding-img" src="./css/images/wedding-1.png">
+            <img class="wedding-img tablet mobile" src="./css/images/wedding-2.png">
+            <img class="wedding-img mobile" src="./css/images/wedding-3.png">
+          </div>
+          <a class="project-title" href="http://www.georgiaandmaxwell.com/">
+            <h2>Wedding website</h2>
           </a>
+          <p class="project-date">created Jan 31, 2018</p>
+          <p class="project-links">
+            <a href="https://github.com/paige1381/georgia-maxwell-wedding">Github repo</a> |
+            <a href="http://www.georgiaandmaxwell.com/">Live site</a>
+          </p>
+          <p class="project-desc">
+            This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
+          </p>
+          <p class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+            <span>Express</span>
+            <span>Ruby</span>
+            <span>Rails</span>
+            <span>Angular JS</span>
+          </p>
         </div>
       </div>
     </section>
@@ -142,110 +295,5 @@
 
   </main>
 
-    <!-- <div class="main-graphic">
-      <svg style='border:0px solid lightgrey' width=100%>
-
-        <circle
-          cx='260'
-          cy='270'
-          r='30'
-          fill='RGBA(233,213,213, 1)'
-        />
-
-        <circle
-          cx='25'
-          cy='275'
-          r='25'
-          fill='RGBA(249,213,213, 1)'
-        />
-        <circle
-          cx='60'
-          cy='250'
-          r='50'
-          fill='RGBA(233,213,213, .8)'
-        />
-        <circle
-          cx='210'
-          cy='225'
-          r='75'
-          fill='RGBA(217,213,213, 1)'
-        />
-        <circle
-          cx='150'
-          cy='200'
-          r='100'
-          fill='RGBA(201,213,213, .7)'
-        />
-        <circle
-          cx='295'
-          cy='280'
-          r='20'
-          fill='RGBA(185,213,213, 1)'
-        />
-        <circle
-          cx='325'
-          cy='150'
-          r='150'
-          fill='RGBA(185,213,213, .7)'
-        />
-        <circle
-          cx='420'
-          cy='175'
-          r='125'
-          fill='RGBA(201,213,213, .9)'
-        />
-        <circle
-          cx='530'
-          cy='165'
-          r='135'
-          fill='RGBA(217,213,213, .8)'
-        />
-
-        <circle
-          cx='585'
-          cy='220'
-          r='80'
-          fill='RGBA(201,213,213, .7)'
-        />
-        <circle
-          cx='675'
-          cy='190'
-          r='110'
-          fill='RGBA(185,213,213, .8)'
-        />
-        <circle
-          cx='725'
-          cy='260'
-          r='40'
-          fill='RGBA(233,213,213, .7)'
-        />
-
-        <circle
-          cx='780'
-          cy='220'
-          r='80'
-          fill='RGBA(249,213,213, .6)'
-        />
-
-        <circle
-          cx='900'
-          cy='260'
-          r='40'
-          fill='RGBA(217,213,213, .6)'
-        />
-        <circle
-          cx='940'
-          cy='275'
-          r='25'
-          fill='RGBA(233,213,213, .8)'
-        />
-        <circle
-          cx='985'
-          cy='285'
-          r='15'
-          fill='RGBA(249,213,213, 1)'
-        />
-      </svg>
-    </div> -->
   </body>
 </html>

@@ -13,6 +13,13 @@
   src: url("./tex-gyre-adventor/texgyreadventor-bold.otf");
 }
 
+@font-face {
+  font-family: "Simple Signature";
+  /*src: url("./serialSueTRIAL/SERIALS_T.otf");*/
+  src: url("./arsenale-white2/arsenale_white.ttf");
+
+}
+
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
 body {
@@ -20,6 +27,16 @@ body {
   letter-spacing: 1px;
   color: darkgrey;
   margin: 0;
+}
+
+#name {
+  font-family: "Simple Signature";
+  font-size: 140px;
+  letter-spacing: 4px;
+}
+
+.desktop-nav, .main-graphic {
+  display: none;
 }
 
 /*Slide-out menu credit to https://codepen.io/shahbokhari/pen/uDahz*/
@@ -49,13 +66,18 @@ nav {
   box-sizing: border-box;
 }
 
-a {
+.menu-link {
   text-decoration: none;
   color: darkgrey;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 5px 0;
   font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: darkgrey;
 }
 
 a:hover {
@@ -81,10 +103,6 @@ a:hover {
   left: 0;
 }
 
-label {
-  height: 30px;
-}
-
 header > .material-icons {
   font-size: 30px;
 }
@@ -102,7 +120,7 @@ section {
 section > h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
   box-sizing: border-box;
   border-bottom: 1px solid darkgrey;
   padding: 0 5px;
@@ -125,7 +143,7 @@ section > h1 {
 }
 
 #bio {
-  /*border: 1px solid darkgrey;*/
+  margin: 0 5px 20px 5px;
 }
 
 .project {
@@ -133,30 +151,119 @@ section > h1 {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-radius: 5px;
 }
 
-.project > a {
+.project-title {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   border-top: 1px solid darkgrey;
+  margin-top: 5px;
+}
+
+.project-title-alt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-top: 1px solid darkgrey;
+  margin-top: 5px;
+}
+
+.mancala-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.pitched-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.wedding-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.mobile {
+  display: none;
 }
 
 .project h2 {
   letter-spacing: 2px;
   font-size: 22px;
   text-transform: none;
-  margin: 5px 5px 10px 0;
+  margin: 5px;
 }
 
+.project-links, .project-date {
+  align-self: flex-end;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
 
+.project-desc {
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
 
+.project-date-alt, .project-links-alt {
+  align-self: flex-start;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
 
+.project-desc-alt {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
 
+.tags {
+  margin: 0 5px 0 0;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.tags-alt {
+  margin: 0 0 0 5px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+span {
+  display: inline-block;
+  background-color: darkgrey;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 2px;
+  box-sizing: border-box;
+}
 
 #contact-blurb {
   padding: 0 5px;
+  align-self: flex-start;
 }
 
 .contact-links {
@@ -208,6 +315,95 @@ section > h1 {
   border-bottom: 1px solid darkgrey;
 }
 
+/*Desktop*/
+@media (min-width: 1000px) {
+  .tablet {
+    display: flex;
+  }
+
+  #name {
+    align-self: flex-end;
+    margin: 140px 120px 0 0;
+  }
+
+  .home {
+    height: 450px;
+    box-sizing: border-box;
+  }
+
+  .desktop-nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid darkgrey;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    background: white;
+  }
+
+  .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1000px;
+    justify-content: space-around;
+    font-size: 28px;
+  }
+
+  header, nav {
+    display: none;
+  }
+
+  main {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 0;
+  }
+
+  .mancala-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mancala-img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .pitched-img {
+    width: 475px;
+    height: 550px;
+    object-fit: scale-down;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .wedding-img {
+    width: 475px;
+    height: 550px;
+    object-fit: scale-down;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .main-graphic {
+    display: flex;
+    width: 100%;
+    margin: 25px auto;
+  }
 
 
 
@@ -217,11 +413,4 @@ section > h1 {
 
 
 
-
-
-
-
-.main-graphic {
-  width: 100%;
-  margin: 100px auto;
 }

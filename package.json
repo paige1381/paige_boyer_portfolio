@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "angular-ui-carousel": "^0.1.10"
+    "express": "^4.16.2"
   },
   "devDependencies": {},
   "scripts": {
