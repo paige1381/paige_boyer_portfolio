@@ -37,7 +37,6 @@ body {
 #name {
   font-family: "Simple Signature";
   font-size: 100px;
-  /*letter-spacing: 4px;*/
   z-index: 3;
   position: absolute;
   top: 50%;
