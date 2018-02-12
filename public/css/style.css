@@ -24,10 +24,9 @@
 body {
   font-family: "Tex Gyre Adventor";
   letter-spacing: 1px;
-  color: darkgrey;
+  color: #737373;
   margin: 0;
   width: 100%;
-  background-color: rgba(249,249,249, .9);
 }
 
 .home {
@@ -69,13 +68,13 @@ header {
   justify-content: flex-start;
   padding: 10px;
   box-sizing: border-box;
-  border-bottom: 1px darkgrey solid;
+  border-bottom: 1px #737373 solid;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 50;
-  background-color: rgba(201, 213, 213, .8);
+  background-color: rgba(201, 213, 213, .9);
 }
 
 nav {
@@ -89,7 +88,7 @@ nav {
 
 .menu-link {
   text-decoration: none;
-  color: darkgrey;
+  color: #737373;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 5px 0;
@@ -98,7 +97,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: darkgrey;
+  color: #737373;
 }
 
 a:hover {
@@ -110,7 +109,7 @@ a:hover {
   height: 100%;
   position: fixed;
   top: 50px;
-  background-color: rgba(217, 213, 213, .8);
+  background-color: rgba(217, 213, 213, .9);
   left: -50%;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -146,11 +145,11 @@ section > h1 {
   letter-spacing: 3px;
   margin: 20px 0 20px 0;
   box-sizing: border-box;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #737373;
   padding: 20px 5px 0 5px;;
 }
 
-.content {
+.content, .about-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,18 +197,8 @@ section > h1 {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  border-top: 1px solid darkgrey;
-  margin-top: 5px;
-}
-
-.project-title-alt {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  border-top: 1px solid darkgrey;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .mancala-images, .pitched-images, .wedding-images {
@@ -243,56 +232,38 @@ section > h1 {
   letter-spacing: 2px;
   font-size: 22px;
   text-transform: none;
-  margin: 5px;
+  margin: 0 0 5px 0 ;
 }
 
-.project-links, .project-date {
-  align-self: flex-end;
+
+.project-links {
+  align-self: flex-start;
   margin: 0;
   box-sizing: border-box;
-  padding: 0 5px;
+  width: 100%;
+}
+
+.project-links > a {
+  text-decoration: underline;
+  font-size: 19px;
 }
 
 .project-desc {
   width: 100%;
-  text-align: right;
-  font-size: 14px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  padding: 0 5px;
-}
-
-.project-date-alt, .project-links-alt {
-  align-self: flex-start;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0 5px;
-}
-
-.project-desc-alt {
-  width: 100%;
   text-align: left;
-  font-size: 14px;
   margin-top: 10px;
   box-sizing: border-box;
-  padding: 0 5px;
 }
 
 .tags {
-  margin: 0 5px 0 0;
-  text-align: right;
-  align-self: flex-end;
-}
-
-.tags-alt {
-  margin: 0 0 0 5px;
+  margin: 0;
   text-align: left;
   align-self: flex-start;
 }
 
 span {
   display: inline-block;
-  background-color: darkgrey;
+  background-color: #737373;
   color: white;
   border-radius: 5px;
   font-size: 12px;
@@ -348,11 +319,11 @@ span {
 }
 
 .right {
-  border-right: 1px solid darkgrey;
+  border-right: 1px solid #737373;
 }
 
 .bottom {
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #737373;
 }
 
 /*Tablet*/
@@ -364,38 +335,34 @@ span {
     margin: 25px auto;
   }
 
+  main {
+    padding: 10px 30px;
+  }
+
   #bio {
-    margin-bottom: 100px;
+    margin-bottom: 0;
   }
 
   .mancala-images, .pitched-images, .wedding-images {
-    width: 580px;
-    height: 600px;
+    width: 510px;
+    height: 540px;
     position: relative;
-    margin: auto;
+    margin: 0 auto 10px auto;
     box-sizing: border-box;
   }
 
   .project {
-    margin-bottom: 100px;
-    padding: 20px 0;
+    margin: 20px 0;
+    padding: 20px;
   }
 
-  .project:nth-child(1) {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .project:nth-child(2) {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .project:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0);
+  .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
+    background-color: rgba(115,115,115, .15);
   }
 
   .project-circles {
-    width: 580px;
-    height: 600px;
+    width: 510px;
+    height: 540px;
   }
 
   .img-1 {
@@ -460,6 +427,20 @@ span {
   .menu {
     width: 35%;
   }
+
+  .about-content {
+    flex-direction: row;
+    margin: 40px 0 40px 0;
+    align-items: flex-start;
+  }
+
+  #about-img {
+    margin: 20px 20px 20px 0;
+  }
+
+  #contact-blurb {
+    margin-top: 20px;
+  }
 }
 
 /*Desktop*/
@@ -487,11 +468,6 @@ span {
     margin: 0;
   }
 
-  #about-img {
-    width: 300px;
-    height: 300px;
-  }
-
   .home {
     height: 400px;
     box-sizing: border-box;
@@ -501,7 +477,7 @@ span {
   .desktop-nav {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid darkgrey;
+    border-bottom: 1px solid #737373;
     height: 50px;
     align-items: center;
     position: fixed;
@@ -527,6 +503,25 @@ span {
     width: 1000px;
     margin: 50px auto;
     padding: 0;
+  }
+
+  .project {
+    padding: 0;
+  }
+
+  .project-title {
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+  }
+
+  .project-links, .project-desc {
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+  }
+
+   .tags {
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
   }
 
   .mancala-images, .pitched-images, .wedding-images {
@@ -561,8 +556,8 @@ span {
   .img-2 {
     width: 420px;
     height: 420px;
-    right: 35px;
-    top: 230px;
+    right: 40px;
+    top: 220px;
     z-index: 2;
   }
 
@@ -577,8 +572,8 @@ span {
   .img-2-alt {
     width: 420px;
     height: 420px;
-    left: 35px;
-    top: 230px;
+    left: 40px;
+    top: 220px;
     z-index: 2;
   }
 
@@ -610,6 +605,10 @@ span {
     display: flex;
     width: 100%;
     margin: 25px auto;
+  }
+
+  .about-content {
+    align-items: center;
   }
 
 }
