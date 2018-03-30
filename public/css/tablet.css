@@ -1,0 +1,113 @@
+/*Tablet*/
+@media (min-width: 600px) {
+  .main-graphic {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 25px auto;
+  }
+
+  main {
+    padding: 10px 30px;
+  }
+
+  .bio {
+    margin-bottom: 0;
+  }
+
+  .mancala-images, .pitched-images, .wedding-images {
+    width: 510px;
+    height: 540px;
+    position: relative;
+    margin: 0 auto 10px auto;
+    box-sizing: border-box;
+  }
+
+  .project {
+    margin: 0 0 20px 0;
+    padding: 20px;
+  }
+
+  .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
+    background-color: rgba(115,115,115, .15);
+  }
+
+  .project-circles {
+    width: 510px;
+    height: 540px;
+  }
+
+  .img-1 {
+    width: 360px;
+    height: 360px;
+    top: 0;
+    left: 15px;
+    z-index: 3;
+  }
+
+  .img-2 {
+    width: 260px;
+    height: 260px;
+    right: 15px;
+    top: 210px;
+    z-index: 2;
+  }
+
+  .img-1-alt {
+    width: 360px;
+    height: 360px;
+    top: 0;
+    right: 15px;
+    z-index: 3;
+  }
+
+  .img-2-alt {
+    width: 260px;
+    height: 260px;
+    left: 15px;
+    top: 210px;
+    z-index: 2;
+  }
+
+  .mancala-img, .pitched-img, .wedding-img {
+    position: absolute;
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  .title-cirlces {
+    width: 600px;
+    height: 100%;
+    margin: auto;
+  }
+
+  .home {
+    position: relative;
+  }
+
+  .name {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0;
+    font-size: 140px;
+  }
+
+  .menu {
+    width: 35%;
+  }
+
+  .about-content {
+    flex-direction: row;
+    margin: 40px 0 40px 0;
+    align-items: center;
+  }
+
+  .about-img {
+    margin: 0 20px 0 0;
+  }
+
+}

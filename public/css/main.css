@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("./fonts/Gotham-Light.otf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("./fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("./fonts/Simplifica.ttf");
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: "Gotham";
+  margin: 0;
+  width: 100%;
+}
+
+body p {
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.home {
+  position: relative;
+}
+
+.name {
+  font-family: "Simplifica";
+  font-size: 44px;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 0 10px;
+  line-height: normal;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.main-graphic {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  margin: auto;
+}
+
+.title-cirlces {
+  width: 340px;
+  height: 300px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+/*Slide-out menu credit to https://codepen.io/shahbokhari/pen/uDahz*/
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px #737373 solid;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #737373;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  background-color: rgba(217, 213, 213, .9);
+  left: -50%;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  z-index: 20;
+}
+
+.slide {
+  left: 0;
+}
+
+header > .material-icons {
+  font-size: 30px;
+}
+
+main {
+  margin-top: 50px;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+section h1 {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin: 20px 0;
+  border-bottom: 1px solid #737373;
+  padding: 20px 5px 0 5px;
+  font-family: "Simplifica";
+  font-size: 34px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.about-img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 0 20px 0;
+}
+
+.bio {
+  margin: 0 5px 20px 5px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px 5px;
+  border-radius: 5px;
+}
+
+.project-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: none;
+  object-position: 50% 0;
+}
+
+.card-section {
+  padding: 20px;
+  border-top: 1px solid grey;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.card-link, .project-links {
+  border-top: 1px solid grey;
+  padding: 15px 10px 10px 10px;
+  font-family: 'Simplifica';
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 20px;
+  width: 100%;
+  line-height: 24px;
+}
+
+.popular-card {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+  background-color: black;
+}
+
+.popular-card:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.popular-image {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  opacity: .8;
+}
+
+.popular-title {
+  position: absolute;
+  width: 75%;
+  padding: 15px 15px 10px 15px;
+  text-align: center;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-family: 'Simplifica';
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: flex;
+}
+
+.contact-blurb {
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.contact-links {
+  margin-top: 40px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 110px;
+  height: 110px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.contact-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.contact-card a {
+  margin: 0;
+
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card p {
+  text-transform: none;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.right {
+  border-right: 1px solid #737373;
+}
+
+.bottom {
+  border-bottom: 1px solid #737373;
+}
+
+.email {
+  text-decoration: underline;
+}

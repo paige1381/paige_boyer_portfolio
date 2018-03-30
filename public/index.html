@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./css/images/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js" charset="utf-8"></script>
@@ -21,6 +23,7 @@
     <a class="menu-link" href="#home" ng-click="ctrl.menu = false" du-smooth-scroll>Home</a>
     <a class="menu-link" href="#about" ng-click="ctrl.menu = false" du-smooth-scroll>About</a>
     <a class="menu-link" href="#portfolio" ng-click="ctrl.menu = false" du-smooth-scroll>Portfolio</a>
+    <a class="menu-link" href="#projects" ng-click="ctrl.menu = false" du-smooth-scroll>Current Projects</a>
     <a class="menu-link" href="#contact" ng-click="ctrl.menu = false" du-smooth-scroll>Contact</a>
   </nav>
 
@@ -29,430 +32,309 @@
       <a class="menu-link" href="#home" du-smooth-scroll>Home</a>
       <a class="menu-link" href="#about" du-smooth-scroll>About</a>
       <a class="menu-link" href="#portfolio" du-smooth-scroll>Portfolio</a>
+      <a class="menu-link" href="#projects" du-smooth-scroll>Current Projects</a>
       <a class="menu-link" href="#contact" du-smooth-scroll>Contact</a>
     </div>
   </div>
 
   <main du-scroll-container>
 
-    <section id="home">
+    <section class="home">
       <div class="home content">
-        <div class="main-graphic">
-          <svg class="title-cirlces">
+        <svg class="title-cirlces">
+          <circle class="desktop tablet"
+            cx='260'
+            cy='175'
+            r='30'
+            fill='RGBA(233,213,213, 1)'
+          />
+          <circle class="mobile"
+            cx='280'
+            cy='180'
+            r='30'
+            fill='RGBA(217,213,213, .6)'
+          />
+          <circle class="desktop tablet mobile"
+            cx='25'
+            cy='175'
+            r='25'
+            fill='RGBA(249,213,213, 1)'
+          />
+          <circle class="mobile"
+            cx='80'
+            cy='200'
+            r='18'
+            fill='RGBA(217,213,213, 1)'
+          />
+          <circle class="desktop tablet mobile"
+            cx='60'
+            cy='150'
+            r='50'
+            fill='RGBA(233,213,213, .8)'
+          />
+          <circle class="mobile"
+            cx='320'
+            cy='175'
+            r='15'
+            fill='RGBA(233,213,213, 1)'
+          />
 
-            <circle class="desktop tablet"
-              cx='260'
-              cy='250'
-              r='30'
-              fill='RGBA(233,213,213, 1)'
-            />
-            <circle class="mobile"
-              cx='280'
-              cy='255'
-              r='30'
-              fill='RGBA(217,213,213, .6)'
-            />
-            <circle class="desktop tablet mobile"
-              cx='25'
-              cy='250'
-              r='25'
-              fill='RGBA(249,213,213, 1)'
-            />
-            <circle class="mobile"
-              cx='80'
-              cy='275'
-              r='18'
-              fill='RGBA(217,213,213, 1)'
-            />
-            <circle class="desktop tablet mobile"
-              cx='60'
-              cy='225'
-              r='50'
-              fill='RGBA(233,213,213, .8)'
-            />
-            <circle class="mobile"
-              cx='320'
-              cy='250'
-              r='15'
-              fill='RGBA(233,213,213, 1)'
-            />
+          <circle class="desktop tablet mobile"
+            cx='210'
+            cy='150'
+            r='75'
+            fill='RGBA(217,213,213, 1)'
+          />
+          <circle class="desktop tablet mobile"
+            cx='150'
+            cy='150'
+            r='100'
+            fill='RGBA(201,213,213, .7)'
+          />
+          <circle class="desktop"
+            cx='295'
+            cy='150'
+            r='20'
+            fill='RGBA(185,213,213, 1)'
+          />
+          <circle class="tablet"
+            cx='320'
+            cy='175'
+            r='20'
+            fill='RGBA(185,213,213, .9)'
+          />
 
-            <circle class="desktop tablet mobile"
-              cx='210'
-              cy='225'
-              r='75'
-              fill='RGBA(217,213,213, 1)'
-            />
-            <circle class="desktop tablet mobile"
-              cx='150'
-              cy='225'
-              r='100'
-              fill='RGBA(201,213,213, .7)'
-            />
-            <circle class="desktop"
-              cx='295'
-              cy='225'
-              r='20'
-              fill='RGBA(185,213,213, 1)'
-            />
-            <circle class="tablet"
-              cx='320'
-              cy='250'
-              r='20'
-              fill='RGBA(185,213,213, .9)'
-            />
+          <circle class="desktop tablet"
+            cx='325'
+            cy='150'
+            r='150'
+            fill='RGBA(185,213,213, .7)'
+          />
+          <circle class="desktop"
+            cx='420'
+            cy='150'
+            r='125'
+            fill='RGBA(201,213,213, .9)'
+          />
+          <circle class="desktop"
+            cx='420'
+            cy='150'
+            r='95'
+            fill='RGBA(201,213,213, .9)'
+          />
+          <circle class="tablet"
+            cx='430'
+            cy='135'
+            r='90'
+            fill='RGBA(201,213,213, .9)'
+          />
+          <circle class="tablet"
+            cx='450'
+            cy='125'
+            r='50'
+            fill='RGBA(233,213,213, .8)'
+          />
+          <circle class="tablet"
+            cx='520'
+            cy='195'
+            r='35'
+            fill='RGBA(233,213,213, .6)'
+          />
+          <circle class="tablet"
+            cx='560'
+            cy='175'
+            r='17'
+            fill='RGBA(233,213,213, 1)'
+          />
 
-            <circle class="desktop tablet"
-              cx='325'
-              cy='225'
-              r='150'
-              fill='RGBA(185,213,213, .7)'
-            />
-            <circle class="desktop"
-              cx='420'
-              cy='225'
-              r='125'
-              fill='RGBA(201,213,213, .9)'
-            />
-            <circle class="desktop"
-              cx='420'
-              cy='225'
-              r='95'
-              fill='RGBA(201,213,213, .9)'
-            />
-            <circle class="tablet"
-              cx='430'
-              cy='210'
-              r='90'
-              fill='RGBA(201,213,213, .9)'
-            />
-            <circle class="tablet"
-              cx='450'
-              cy='200'
-              r='50'
-              fill='RGBA(233,213,213, .8)'
-            />
-            <circle class="tablet"
-              cx='520'
-              cy='270'
-              r='35'
-              fill='RGBA(233,213,213, .6)'
-            />
-            <circle class="tablet"
-              cx='560'
-              cy='250'
-              r='17'
-              fill='RGBA(233,213,213, 1)'
-            />
+          <circle class="desktop"
+            cx='530'
+            cy='175'
+            r='135'
+            fill='RGBA(217,213,213, .8)'
+          />
 
-            <circle class="desktop"
-              cx='530'
-              cy='250'
-              r='135'
-              fill='RGBA(217,213,213, .8)'
-            />
+          <circle class="desktop"
+            cx='585'
+            cy='150'
+            r='80'
+            fill='RGBA(201,213,213, .7)'
+          />
+          <circle class="desktop"
+            cx='675'
+            cy='175'
+            r='110'
+            fill='RGBA(185,213,213, .8)'
+          />
+          <circle class="desktop"
+            cx='725'
+            cy='150'
+            r='40'
+            fill='RGBA(233,213,213, .7)'
+          />
 
-            <circle class="desktop"
-              cx='585'
-              cy='225'
-              r='80'
-              fill='RGBA(201,213,213, .7)'
-            />
-            <circle class="desktop"
-              cx='675'
-              cy='250'
-              r='110'
-              fill='RGBA(185,213,213, .8)'
-            />
-            <circle class="desktop"
-              cx='725'
-              cy='225'
-              r='40'
-              fill='RGBA(233,213,213, .7)'
-            />
+          <circle class="desktop"
+            cx='800'
+            cy='185'
+            r='80'
+            fill='RGBA(249,213,213, .6)'
+          />
 
-            <circle class="desktop"
-              cx='800'
-              cy='260'
-              r='80'
-              fill='RGBA(249,213,213, .6)'
-            />
-
-            <circle class="desktop"
-              cx='900'
-              cy='225'
-              r='40'
-              fill='RGBA(217,213,213, .6)'
-            />
-            <circle class="desktop"
-              cx='940'
-              cy='250'
-              r='25'
-              fill='RGBA(233,213,213, .8)'
-            />
-            <circle class="desktop"
-              cx='985'
-              cy='250'
-              r='15'
-              fill='RGBA(249,213,213, 1)'
-            />
-          </svg>
-        </div>
-        <h1 id="name">Paige Boyer</h1>
+          <circle class="desktop"
+            cx='900'
+            cy='150'
+            r='40'
+            fill='RGBA(217,213,213, .6)'
+          />
+          <circle class="desktop"
+            cx='940'
+            cy='175'
+            r='25'
+            fill='RGBA(233,213,213, .8)'
+          />
+          <circle class="desktop"
+            cx='985'
+            cy='175'
+            r='15'
+            fill='RGBA(249,213,213, 1)'
+          />
+        </svg>
+        <h1 class="name">Paige Boyer</h1>
       </div>
     </section>
 
-    <section id="about">
-      <h1>About</h1>
-      <div class="about-content">
-        <img id="about-img" src="https://i.imgur.com/ybD3O3Q.jpg?3">
-        <div id="bio">
+    <section class="about">
+      <div class="content">
+        <img class="about-img" src="https://i.imgur.com/ybD3O3Q.jpg?3">
+        <p class="bio">
           Hi, I'm Paige Boyer, a freelance fullstack web developer.
           I work hard to not only implement technical solutions, but to ensure these solutions are comprehensive and flexible. As someone who values efficiency and resourcefulness, I approach problems with scalability in mind and strive to help others do the same. As a result, I’m able to focus more time and energy on future enhancements as opposed to maintenance. I'm also passionate about designing clean and user-friendly frontends with a hint of pretty. On my site you'll find some of my most recent projects that I completed during my time enrolled in General Assembly's coding bootcamp. Enjoy!
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="content">
+        <h1>Portfolio</h1>
+        <div class="cards">
+          <div class="card">
+            <a href="https://paige1381.github.io/Mancala/" target="_blank" class="popular-card">
+              <h3 class="popular-title">Mancala</h3>
+              <img class="popular-image" src="./css/images/Mancala-1.png">
+            </a>
+              <div class="project-links">
+                <a href="https://github.com/paige1381/Mancala" target="_blank">Github repo ></a> |
+                <a href="https://paige1381.github.io/Mancala/" target="_blank">Live site ></a>
+              </div>
+              <div class="card-section">
+              <p class="card-text">
+                An interactive mancala game for your desktop created as part of a course project to demonstrate the use of jQuery. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
+              </p>
+            </div>
+            <div class="card-link">
+              HTML, CSS, JavaScript, JQuery
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="https://pitched-app.herokuapp.com/reviews" target="_blank" class="popular-card">
+              <h3 class="popular-title">pitched</h3>
+              <img class="popular-image" src="./css/images/pitched-1.png">
+            </a>
+              <div class="project-links">
+                <a href="https://github.com/paige1381/pitched" target="_blank">Github repo ></a> |
+                <a href="https://pitched-app.herokuapp.com/reviews" target="_blank">Live site ></a>
+              </div>
+              <div class="card-section">
+              <p class="card-text">
+                pitched is a campsite review app that was built for a course project to practice using EJS and MVC architecture. Users can register with the site and post their own pictures and thoughts on camping spots all over the world. Members of the site also have the ability to delete and edit their own reviews and comment on others.
+              </p>
+            </div>
+            <div class="card-link">
+              Express, Bootstrap, EJS, Node.js, MongoDB, Mongoose
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="http://www.georgiaandmaxwell.com/" target="_blank" class="popular-card">
+              <h3 class="popular-title">Wedding website</h3>
+              <img class="popular-image" src="./css/images/wedding-1.png">
+            </a>
+              <div class="project-links">
+                <a href="https://github.com/paige1381/georgia-maxwell-wedding" target="_blank">Github repo ></a> |
+                <a href="http://www.georgiaandmaxwell.com/" target="_blank">Live site ></a>
+              </div>
+              <div class="card-section">
+              <p class="card-text">
+                This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
+              </p>
+            </div>
+            <div class="card-link">
+              AngularJS, Ruby on Rails, PostgreSQL
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="portfolio">
-      <h1>Portfolio</h1>
+    <section class="projects">
       <div class="content">
-
-        <div class="project">
-          <a class="project-title" href="https://paige1381.github.io/Mancala/" target="_blank">
-            <h2>Mancala</h2>
-          </a>
-
-          <div class="mancala-images">
-            <svg class="project-circles tablet">
-              <circle
-                cx='250'
-                cy='250'
-                r='250'
-                fill='RGBA(233,213,213, .8)'
-              />
-              <circle
-                cx='180'
-                cy='500'
-                r='40'
-                fill='rgba(185, 213, 213, .9)'
-              />
-              <circle
-                cx='110'
-                cy='440'
-                r='75'
-                fill='rgba(217, 213, 213, .8)'
-              />
-            </svg>
-            <svg class="project-circles desktop">
-              <circle
-                cx='605'
-                cy='375'
-                r='375'
-                fill='RGBA(233,213,213, .8)'
-              />
-              <circle
-                cx='340'
-                cy='500'
-                r='250'
-                fill='rgba(185, 213, 213, .6)'
-              />
-              <circle
-                cx='130'
-                cy='670'
-                r='75'
-                fill='rgba(217, 213, 213, .8)'
-              />
-              <circle
-                cx='200'
-                cy='730'
-                r='30'
-                fill='RGBA(233,213,213, 1)'
-              />
-
-            </svg>
-
-            <img class="mancala-img mobile tablet desktop img-1" src="./css/images/Mancala-1.png">
-            <img class="mancala-img tablet desktop img-2" src="./css/images/Mancala-2.png">
+        <h1>Current Projects</h1>
+        <div class="cards">
+          <div class="card">
+            <div class="popular-card">
+              <h3 class="popular-title">Top Line HR</h3>
+              <img class="popular-image" src="./css/images/TopLineHR-1.png">
+            </div>
+            <div class="card-section">
+              <p class="card-text">
+                This is a website built for a client in the HR industry. The frontend work here is mostly completed; however, the project is on hold at the moment. This site is intended to provide information on talent coaching and other services the firm offers, along with a blog and event postings.
+              </p>
+            </div>
+            <div class="card-link">
+              AngularJS, Ruby on Rails, PostgreSQL
+            </div>
           </div>
-          <p class="project-links">
-            <a href="https://github.com/paige1381/Mancala" target="_blank">Github repo</a> |
-            <a href="https://paige1381.github.io/Mancala/" target="_blank">Live site</a>
-          </p>
-          <p class="project-desc">
-            An interactive mancala game for your desktop. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
-          </p>
-          <p class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>JQuery</span>
-          </p>
-        </div>
 
-        <div class="project">
-          <a class="project-title" href="https://pitched-app.herokuapp.com/reviews" target="_blank">
-            <h2>pitched</h2>
-          </a>
-          <div class="pitched-images">
-            <svg class="project-circles tablet">
-              <circle
-                cx='260'
-                cy='250'
-                r='250'
-                fill='rgba(185, 213, 213, .8)'
-              />
-              <circle
-                cx='330'
-                cy='500'
-                r='40'
-                fill='rgba(217, 213, 213, .9)'
-              />
-              <circle
-                cx='400'
-                cy='440'
-                r='75'
-                fill='RGBA(233,213,213, .8)'
-              />
-            </svg>
-            <svg class="project-circles desktop">
-              <circle
-                cx='395'
-                cy='375'
-                r='375'
-                fill='rgba(185, 213, 213, .8)'
-              />
-              <circle
-                cx='705'
-                cy='590'
-                r='275'
-                fill='rgba(217, 213, 213, .6)'
-              />
-              <circle
-                cx='870'
-                cy='820'
-                r='75'
-                fill='RGBA(233,213,213, .8)'
-              />
-              <circle
-                cx='800'
-                cy='870'
-                r='30'
-                fill='rgba(185, 213, 213, 1)'
-              />
-            </svg>
-
-            <img class="pitched-img mobile tablet desktop img-1-alt" src="./css/images/pitched-1.png">
-            <img class="pitched-img tablet desktop img-2-alt" src="./css/images/pitched-2.png">
-            <img class="pitched-img desktop img-3-alt" src="./css/images/pitched-3.png">
+          <div class="card">
+            <div class="popular-card">
+              <h3 class="popular-title">Kale Kindyl</h3>
+              <img class="popular-image" src="./css/images/KaleKindyl-1.png">
+            </div>
+            <div class="card-section">
+              <p class="card-text">
+                Kale Kindyl is a vegan food blog that promotes easy, clean cooking. The site breaks down recipes into multiple categories that will eventually be searchable.
+              </p>
+            </div>
+            <div class="card-link">
+              AngularJS, Ruby on Rails, PostgreSQL
+            </div>
           </div>
-          <p class="project-links">
-            <a href="https://github.com/paige1381/pitched" target="_blank">Github repo</a> |
-            <a href="https://pitched-app.herokuapp.com/reviews" target="_blank">Live site</a>
-          </p>
-          <p class="project-desc">
-            pitched is a campsite review app, where users can register with the site and post their own pictures and thoughts on camping spots all over the world. Members of the site also have the ability to delete and edit their own reviews and comment on others.
-          </p>
-          <p class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JQuery</span>
-            <span>Express</span>
-            <span>Bootstrap</span>
-            <span>EJS</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>Mongoose</span>
-          </p>
-        </div>
 
-        <div class="project">
-          <a class="project-title" href="http://www.georgiaandmaxwell.com/" target="_blank">
-            <h2>Wedding website</h2>
-          </a>
-          <div class="wedding-images">
-            <svg class="project-circles tablet">
-              <circle
-                cx='250'
-                cy='250'
-                r='250'
-                fill='rgba(217, 213, 213, .8)'
-              />
-              <circle
-                cx='180'
-                cy='500'
-                r='40'
-                fill='RGBA(233,213,213, .9)'
-              />
-              <circle
-                cx='110'
-                cy='440'
-                r='75'
-                fill='rgba(185, 213, 213, .8)'
-              />
-            </svg>
-            <svg class="project-circles desktop">
-              <circle
-                cx='605'
-                cy='375'
-                r='375'
-                fill='rgba(217, 213, 213, .8)'
-              />
-              <circle
-                cx='295'
-                cy='560'
-                r='275'
-                fill='RGBA(233,213,213, .6)'
-              />
-              <circle
-                cx='110'
-                cy='790'
-                r='75'
-                fill='rgba(185, 213, 213, .8)'
-              />
-              <circle
-                cx='705'
-                cy='925'
-                r='275'
-                fill='rgba(185, 213, 213, .6)'
-              />
-              <circle
-                cx='150'
-                cy='900'
-                r='30'
-                fill='rgb(249, 213, 213)'
-              />
-            </svg>
-
-            <img class="wedding-img mobile tablet desktop img-1" src="./css/images/wedding-1.png">
-            <img class="wedding-img tablet desktop img-2" src="./css/images/wedding-2.png">
-            <img class="wedding-img desktop img-3" src="./css/images/wedding-3.png">
-            <img class="wedding-img desktop img-4" src="./css/images/wedding-4.png">
+          <div class="card">
+            <div class="popular-card">
+              <h3 class="popular-title">Feed Me Clarity</h3>
+              <img class="popular-image" src="./css/images/FeedMeClarity-1.png">
+            </div>
+            <div class="card-section">
+              <p class="card-text">
+                Feed Me Clarity is another blog that focuses on healthy living, breaking posts down into 3 categories related to the mind, body, and soul. It will feature anything from recipes to travel advice to beauty tips.
+              </p>
+            </div>
+            <div class="card-link">
+              AngularJS, Ruby on Rails, PostgreSQL
+            </div>
           </div>
-          <p class="project-links">
-            <a href="https://github.com/paige1381/georgia-maxwell-wedding" target="_blank">Github repo</a> |
-            <a href="http://www.georgiaandmaxwell.com/" target="_blank">Live site</a>
-          </p>
-          <p class="project-desc">
-            This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
-          </p>
-          <p class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>PostgreSQL</span>
-            <span>Ruby</span>
-            <span>Rails</span>
-            <span>Angular JS</span>
-          </p>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h1>Contact</h1>
+    <section class="contact">
       <div class="content">
-        <div id="contact-blurb">
-          Like my work? Shoot me an email at <a id="email" href="mailto:paige1381@gmail.com">paige1381@gmail.com</a> or connect with me through the links below:
-        </div>
+        <h1>Contact</h1>
+        <p class="contact-blurb">
+          Like my work? Shoot me an email at <a class="email" href="mailto:paige1381@gmail.com">paige1381@gmail.com</a> or connect with me through the links below:
+        </p>
         <div class="contact-links">
           <div class="contact-row">
             <div class="contact-card right bottom">
