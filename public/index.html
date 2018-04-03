@@ -1,333 +1,174 @@
 <!DOCTYPE html>
-<html ng-app="portfolio-app">
+<html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./css/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
     <title>Paige Boyer</title>
   </head>
-  <body ng-controller="MainController as ctrl">
+  <body>
 
-  <header>
+<header>
+  <nav>
+    <a href="#">About</a> |
+    <a href="#">Work</a> |
+    <a href="#">Contact</a>
+  </nav>
+
+  <h1 class="heading name">I'm Paige Boyer</h1>
+  <p class="content">
+    a freelance fullstack web developer. I work hard to not only implement technical solutions, but to ensure these solutions are comprehensive and flexible. As someone who values efficiency and resourcefulness, I approach problems with scalability in mind and strive to help others do the same. As a result, I’m able to focus more time and energy on future enhancements as opposed to maintenance. I'm also passionate about designing clean and user-friendly frontends with a hint of pretty. On my site you'll find some of my most recent projects that I completed during my time enrolled in General Assembly's coding bootcamp along with current projects I'm completing for clients.
+  </p>
+  <img class="about-img" src="https://i.imgur.com/ybD3O3Q.jpg?3">
+</header>
+
+<main>
+  <div class="project">
+    <section>
+      <h1 class="heading">Mancala</h1>
+      <p class="content">
+        An interactive mancala game for your desktop created as part of a course project to demonstrate the use of jQuery. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
+      </p>
+      <h2 class="sub-heading">HTML, CSS, JavaScript, JQuery</h2>
+      <div class="links">
+        <a href="https://github.com/paige1381/Mancala" target="_blank">Github</a>
+        <a href="https://paige1381.github.io/Mancala/" target="_blank">Live Site</a>
+      </div>
+    </section>
+    <img class="project-img" src="./css/images/Mancala-1.png">
+  </div>
+
+  <div class="project">
+    <section>
+      <h1 class="heading">pitched</h1>
+      <p class="content">
+        pitched is a campsite review app that was built for a course project to practice using EJS and MVC architecture. Users can register with the site and post their own pictures and thoughts on camping spots all over the world. Members of the site also have the ability to delete and edit their own reviews and comment on others.
+      </p>
+      <h2 class="sub-heading">Express, Bootstrap, EJS, Node.js, MongoDB, Mongoose</h2>
+      <div class="links">
+        <a href="https://github.com/paige1381/pitched" target="_blank">Github</a>
+        <a href="https://pitched-app.herokuapp.com/reviews" target="_blank">Live Site</a>
+      </div>
+    </section>
+    <img class="project-img" src="./css/images/pitched-1.png">
+  </div>
+
+  <div class="project">
+    <section>
+      <h1 class="heading">Wedding Website</h1>
+      <p class="content">
+        This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
+      </p>
+      <h2 class="sub-heading">AngularJS, Ruby on Rails, PostgreSQL</h2>
+      <div class="links">
+        <a href="https://github.com/paige1381/georgia-maxwell-wedding" target="_blank">Github</a>
+        <a href="http://www.georgiaandmaxwell.com/" target="_blank">Live Site</a>
+      </div>
+    </section>
+    <img class="project-img" src="./css/images/wedding-1.png">
+  </div>
+
+  <div class="project">
+    <section>
+      <h1 class="heading">Top Line HR</h1>
+      <p class="content">
+        This is a website built for a client in the HR industry. The frontend work here is mostly completed; however, the project is on hold at the moment. This site is intended to provide information on talent coaching and other services the firm offers, along with a blog and event postings.
+      </p>
+      <h2 class="sub-heading">AngularJS, Ruby on Rails, PostgreSQL</h2>
+      <div class="links">
+        <a href="https://github.com/paige1381/Top-Line-HR" target="_blank">Github</a>
+      </div>
+    </section>
+    <img class="project-img" src="./css/images/TopLineHR-1.png">
+  </div>
+
+  <div class="project">
+    <section>
+      <h1 class="heading">Kale Kindyl</h1>
+      <p class="content">
+        Kale Kindyl is a vegan food blog that promotes easy, clean cooking. The site breaks down recipes into multiple categories that will eventually be searchable.
+      </p>
+      <h2 class="sub-heading">AngularJS, Ruby on Rails, PostgreSQL</h2>
+      <div class="links">
+        <a href="https://github.com/paige1381/kale_kindyl" target="_blank">Github</a>
+      </div>
+    </section>
+    <img class="project-img" src="./css/images/KaleKindyl-1.png">
+  </div>
+
+  <div class="project">
+    <section>
+      <h1 class="heading">Feed Me Clarity</h1>
+      <p class="content">
+        Feed Me Clarity is another blog that focuses on healthy living, breaking posts down into 3 categories related to the mind, body, and soul. It will feature anything from recipes to travel advice to beauty tips.
+      </p>
+      <h2 class="sub-heading">
+        AngularJS, Ruby on Rails, PostgreSQL
+      </h2>
+      <div class="links">
+        <a href="https://github.com/paige1381/feed-me-clarity" target="_blank">Github</a>
+      </div>
+    </section>
+    <img class="project-img" src="./css/images/FeedMeClarity-1.png">
+  </div>
+
+
+</main>
+
+<footer>
+  <h1 class="heading">Contact</h1>
+  <p class="content">
+    Like my work? Shoot me an email at <a class="email" href="mailto:paige1381@gmail.com">paige1381@gmail.com</a> or connect with me:
+  </p>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/thepaigeboyer/" target="_blank">
+      <img class="contact-img" src="./css/images/linkedin.svg">
+    </a>
+    <a href="./PaigeBoyer_Resume_WDI.pdf" target="_blank">
+      <img class="contact-img" src="./css/images/resume.svg">
+    </a>
+    <a href="https://github.com/paige1381" target="_blank">
+      <img class="contact-img" src="./css/images/github.svg">
+    </a>
+    <a href="https://www.instagram.com/pabze/?hl=en" target="_blank">
+      <img src="./css/images/instagram.svg">
+    </a>
+  </div>
+  <h6>
+    Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a>, and <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+  </h6>
+</footer>
+
+
+  <!-- <header>
     <i class="material-icons" ng-click="ctrl.menu = !ctrl.menu">menu</i>
   </header>
 
   <nav ng-class="ctrl.menu? 'slide' : ''" class="menu">
-    <a class="menu-link" href="#home" ng-click="ctrl.menu = false" du-smooth-scroll>Home</a>
-    <a class="menu-link" href="#about" ng-click="ctrl.menu = false" du-smooth-scroll>About</a>
-    <a class="menu-link" href="#portfolio" ng-click="ctrl.menu = false" du-smooth-scroll>Portfolio</a>
-    <a class="menu-link" href="#projects" ng-click="ctrl.menu = false" du-smooth-scroll>Current Projects</a>
-    <a class="menu-link" href="#contact" ng-click="ctrl.menu = false" du-smooth-scroll>Contact</a>
+    <a class="menu-link" href="#home" ng-click="ctrl.menu = false">Home</a>
+    <a class="menu-link" href="#about" ng-click="ctrl.menu = false">About</a>
+    <a class="menu-link" href="#portfolio" ng-click="ctrl.menu = false">Portfolio</a>
+    <a class="menu-link" href="#projects" ng-click="ctrl.menu = false">Current Projects</a>
+    <a class="menu-link" href="#contact" ng-click="ctrl.menu = false">Contact</a>
   </nav>
 
   <div class="desktop-nav">
     <div class="desktop-menu">
-      <a class="menu-link" href="#home" du-smooth-scroll>Home</a>
-      <a class="menu-link" href="#about" du-smooth-scroll>About</a>
-      <a class="menu-link" href="#portfolio" du-smooth-scroll>Portfolio</a>
-      <a class="menu-link" href="#projects" du-smooth-scroll>Current Projects</a>
-      <a class="menu-link" href="#contact" du-smooth-scroll>Contact</a>
+      <a class="menu-link" href="#home">Home</a>
+      <a class="menu-link" href="#about">About</a>
+      <a class="menu-link" href="#portfolio">Portfolio</a>
+      <a class="menu-link" href="#projects">Current Projects</a>
+      <a class="menu-link" href="#contact">Contact</a>
     </div>
   </div>
 
-  <main du-scroll-container>
 
-    <section class="home">
-      <div class="home content">
-        <svg class="title-cirlces">
-          <circle class="desktop tablet"
-            cx='260'
-            cy='175'
-            r='30'
-            fill='RGBA(233,213,213, 1)'
-          />
-          <circle class="mobile"
-            cx='280'
-            cy='180'
-            r='30'
-            fill='RGBA(217,213,213, .6)'
-          />
-          <circle class="desktop tablet mobile"
-            cx='25'
-            cy='175'
-            r='25'
-            fill='RGBA(249,213,213, 1)'
-          />
-          <circle class="mobile"
-            cx='80'
-            cy='200'
-            r='18'
-            fill='RGBA(217,213,213, 1)'
-          />
-          <circle class="desktop tablet mobile"
-            cx='60'
-            cy='150'
-            r='50'
-            fill='RGBA(233,213,213, .8)'
-          />
-          <circle class="mobile"
-            cx='320'
-            cy='175'
-            r='15'
-            fill='RGBA(233,213,213, 1)'
-          />
-
-          <circle class="desktop tablet mobile"
-            cx='210'
-            cy='150'
-            r='75'
-            fill='RGBA(217,213,213, 1)'
-          />
-          <circle class="desktop tablet mobile"
-            cx='150'
-            cy='150'
-            r='100'
-            fill='RGBA(201,213,213, .7)'
-          />
-          <circle class="desktop"
-            cx='295'
-            cy='150'
-            r='20'
-            fill='RGBA(185,213,213, 1)'
-          />
-          <circle class="tablet"
-            cx='320'
-            cy='175'
-            r='20'
-            fill='RGBA(185,213,213, .9)'
-          />
-
-          <circle class="desktop tablet"
-            cx='325'
-            cy='150'
-            r='150'
-            fill='RGBA(185,213,213, .7)'
-          />
-          <circle class="desktop"
-            cx='420'
-            cy='150'
-            r='125'
-            fill='RGBA(201,213,213, .9)'
-          />
-          <circle class="desktop"
-            cx='420'
-            cy='150'
-            r='95'
-            fill='RGBA(201,213,213, .9)'
-          />
-          <circle class="tablet"
-            cx='430'
-            cy='135'
-            r='90'
-            fill='RGBA(201,213,213, .9)'
-          />
-          <circle class="tablet"
-            cx='450'
-            cy='125'
-            r='50'
-            fill='RGBA(233,213,213, .8)'
-          />
-          <circle class="tablet"
-            cx='520'
-            cy='195'
-            r='35'
-            fill='RGBA(233,213,213, .6)'
-          />
-          <circle class="tablet"
-            cx='560'
-            cy='175'
-            r='17'
-            fill='RGBA(233,213,213, 1)'
-          />
-
-          <circle class="desktop"
-            cx='530'
-            cy='175'
-            r='135'
-            fill='RGBA(217,213,213, .8)'
-          />
-
-          <circle class="desktop"
-            cx='585'
-            cy='150'
-            r='80'
-            fill='RGBA(201,213,213, .7)'
-          />
-          <circle class="desktop"
-            cx='675'
-            cy='175'
-            r='110'
-            fill='RGBA(185,213,213, .8)'
-          />
-          <circle class="desktop"
-            cx='725'
-            cy='150'
-            r='40'
-            fill='RGBA(233,213,213, .7)'
-          />
-
-          <circle class="desktop"
-            cx='800'
-            cy='185'
-            r='80'
-            fill='RGBA(249,213,213, .6)'
-          />
-
-          <circle class="desktop"
-            cx='900'
-            cy='150'
-            r='40'
-            fill='RGBA(217,213,213, .6)'
-          />
-          <circle class="desktop"
-            cx='940'
-            cy='175'
-            r='25'
-            fill='RGBA(233,213,213, .8)'
-          />
-          <circle class="desktop"
-            cx='985'
-            cy='175'
-            r='15'
-            fill='RGBA(249,213,213, 1)'
-          />
-        </svg>
-        <h1 class="name">Paige Boyer</h1>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="content">
-        <img class="about-img" src="https://i.imgur.com/ybD3O3Q.jpg?3">
-        <p class="bio">
-          Hi, I'm Paige Boyer, a freelance fullstack web developer.
-          I work hard to not only implement technical solutions, but to ensure these solutions are comprehensive and flexible. As someone who values efficiency and resourcefulness, I approach problems with scalability in mind and strive to help others do the same. As a result, I’m able to focus more time and energy on future enhancements as opposed to maintenance. I'm also passionate about designing clean and user-friendly frontends with a hint of pretty. On my site you'll find some of my most recent projects that I completed during my time enrolled in General Assembly's coding bootcamp. Enjoy!
-        </p>
-      </div>
-    </section>
-
-    <section class="portfolio">
-      <div class="content">
-        <h1>Portfolio</h1>
-        <div class="cards">
-          <div class="card">
-            <a href="https://paige1381.github.io/Mancala/" target="_blank" class="popular-card">
-              <h3 class="popular-title">Mancala</h3>
-              <img class="popular-image" src="./css/images/Mancala-1.png">
-            </a>
-              <div class="project-links">
-                <a href="https://github.com/paige1381/Mancala" target="_blank">Github repo ></a> |
-                <a href="https://paige1381.github.io/Mancala/" target="_blank">Live site ></a>
-              </div>
-              <div class="card-section">
-              <p class="card-text">
-                An interactive mancala game for your desktop created as part of a course project to demonstrate the use of jQuery. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
-              </p>
-            </div>
-            <div class="card-link">
-              HTML, CSS, JavaScript, JQuery
-            </div>
-          </div>
-
-          <div class="card">
-            <a href="https://pitched-app.herokuapp.com/reviews" target="_blank" class="popular-card">
-              <h3 class="popular-title">pitched</h3>
-              <img class="popular-image" src="./css/images/pitched-1.png">
-            </a>
-              <div class="project-links">
-                <a href="https://github.com/paige1381/pitched" target="_blank">Github repo ></a> |
-                <a href="https://pitched-app.herokuapp.com/reviews" target="_blank">Live site ></a>
-              </div>
-              <div class="card-section">
-              <p class="card-text">
-                pitched is a campsite review app that was built for a course project to practice using EJS and MVC architecture. Users can register with the site and post their own pictures and thoughts on camping spots all over the world. Members of the site also have the ability to delete and edit their own reviews and comment on others.
-              </p>
-            </div>
-            <div class="card-link">
-              Express, Bootstrap, EJS, Node.js, MongoDB, Mongoose
-            </div>
-          </div>
-
-          <div class="card">
-            <a href="http://www.georgiaandmaxwell.com/" target="_blank" class="popular-card">
-              <h3 class="popular-title">Wedding website</h3>
-              <img class="popular-image" src="./css/images/wedding-1.png">
-            </a>
-              <div class="project-links">
-                <a href="https://github.com/paige1381/georgia-maxwell-wedding" target="_blank">Github repo ></a> |
-                <a href="http://www.georgiaandmaxwell.com/" target="_blank">Live site ></a>
-              </div>
-              <div class="card-section">
-              <p class="card-text">
-                This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
-              </p>
-            </div>
-            <div class="card-link">
-              AngularJS, Ruby on Rails, PostgreSQL
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects">
-      <div class="content">
-        <h1>Current Projects</h1>
-        <div class="cards">
-          <div class="card">
-            <div class="popular-card">
-              <h3 class="popular-title">Top Line HR</h3>
-              <img class="popular-image" src="./css/images/TopLineHR-1.png">
-            </div>
-            <div class="card-section">
-              <p class="card-text">
-                This is a website built for a client in the HR industry. The frontend work here is mostly completed; however, the project is on hold at the moment. This site is intended to provide information on talent coaching and other services the firm offers, along with a blog and event postings.
-              </p>
-            </div>
-            <div class="card-link">
-              AngularJS, Ruby on Rails, PostgreSQL
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="popular-card">
-              <h3 class="popular-title">Kale Kindyl</h3>
-              <img class="popular-image" src="./css/images/KaleKindyl-1.png">
-            </div>
-            <div class="card-section">
-              <p class="card-text">
-                Kale Kindyl is a vegan food blog that promotes easy, clean cooking. The site breaks down recipes into multiple categories that will eventually be searchable.
-              </p>
-            </div>
-            <div class="card-link">
-              AngularJS, Ruby on Rails, PostgreSQL
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="popular-card">
-              <h3 class="popular-title">Feed Me Clarity</h3>
-              <img class="popular-image" src="./css/images/FeedMeClarity-1.png">
-            </div>
-            <div class="card-section">
-              <p class="card-text">
-                Feed Me Clarity is another blog that focuses on healthy living, breaking posts down into 3 categories related to the mind, body, and soul. It will feature anything from recipes to travel advice to beauty tips.
-              </p>
-            </div>
-            <div class="card-link">
-              AngularJS, Ruby on Rails, PostgreSQL
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="contact">
       <div class="content">
@@ -374,9 +215,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-  </main>
 
   </body>
 </html>
