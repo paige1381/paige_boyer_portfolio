@@ -35,6 +35,10 @@
     flex-direction: row;
   }
 
+  .border-alt {
+    border-left: solid black 2px;  
+  }
+
   .contact-links {
     width: 55%;
     padding: 10px 70px 10px 15px;
