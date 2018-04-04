@@ -46,16 +46,118 @@
     width: 50%;
   }
 
-  .dim {
+  .dim-left, .dim-right {
     width: 50%;
     height: 500px;
   }
 
+  .project-img {
+    opacity: .7;
+  }
+
+  .project-img-more {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    opacity: 1;
+    height: 500px;
+    position: relative;
+  }
+
   .more {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     align-items: center;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+  }
+
+  .more-text {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    overflow-y: hidden;
+    margin: 5px 0;
+  }
+
+  .img-left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    z-index: 2;
+    top: 0;
+    right: -100%;
+  }
+
+  .img-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    z-index: 2;
+    top: 0;
+    left: -100%;
+  }
+
+  .slide-left {
+    right: 0;
+  }
+
+  .slide-right {
+    left: 0;
+  }
+
+  .img-less {
+    position: relative;
+  }
+
+  .less-left, .less-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    vertical-align: middle;
+  }
+
+  .less-right {
+    right: 0;
+  }
+
+  .less-left {
+    left: 0;
+  }
+
+  .border {
+    border-left: solid black 2px;
   }
 
   .contact-links a {
@@ -71,5 +173,8 @@
     display: flex;
   }
 
+  .desktop {
+    display: none;
+  }
 
 }

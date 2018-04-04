@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
     <title>Paige Boyer</title>
   </head>
@@ -33,77 +34,6 @@
 </header>
 
 <main>
-  <div class="project">
-    <div class="row">
-      <section>
-        <h1 class="heading">Mancala</h1>
-        <p class="content">
-          An interactive mancala game for your desktop created as part of a course project to demonstrate the use of jQuery. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
-        </p>
-        <h2 class="sub-heading">HTML, CSS, JavaScript, JQuery</h2>
-        <div class="links">
-          <a href="https://github.com/paige1381/Mancala" target="_blank">Github</a>
-          <a href="https://paige1381.github.io/Mancala/" target="_blank">Live Site</a>
-        </div>
-      </section>
-      <div class="dim">
-        <img class="project-img" src="./css/images/Mancala-1.png">
-        <div class="more">
-          <h1 class="more-text">View More</h1>
-          <i class="material-icons mobile">expand_more</i>
-          <i class="material-icons tablet">chevron_right</i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="project">
-    <div class="row">
-      <section>
-        <h1 class="heading">pitched</h1>
-        <p class="content">
-          pitched is a campsite review app built for a course project to practice using EJS and MVC architecture. Users can register with the site and post their own pictures and thoughts on camping spots. Members of the site also have the ability to delete and edit their own reviews and comment on others.
-        </p>
-        <h2 class="sub-heading">Express, Bootstrap, EJS, Node.js, MongoDB</h2>
-        <div class="links">
-          <a href="https://github.com/paige1381/pitched" target="_blank">Github</a>
-          <a href="https://pitched-app.herokuapp.com/reviews" target="_blank">Live Site</a>
-        </div>
-      </section>
-      <div class="dim">
-        <img class="project-img" src="./css/images/pitched-1.png">
-        <div class="more">
-          <h1 class="more-text">View More</h1>
-          <i class="material-icons mobile">expand_more</i>
-          <i class="material-icons tablet">chevron_right</i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="project">
-    <div class="row">
-      <section>
-        <h1 class="heading">Wedding Website</h1>
-        <p class="content">
-          This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
-        </p>
-        <h2 class="sub-heading">AngularJS, Ruby on Rails, PostgreSQL</h2>
-        <div class="links">
-          <a href="https://github.com/paige1381/georgia-maxwell-wedding" target="_blank">Github</a>
-          <a href="http://www.georgiaandmaxwell.com/" target="_blank">Live Site</a>
-        </div>
-      </section>
-      <div class="dim">
-        <img class="project-img" src="./css/images/wedding-1.png">
-        <div class="more">
-          <h1 class="more-text">View More</h1>
-          <i class="material-icons mobile">expand_more</i>
-          <i class="material-icons tablet">chevron_right</i>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="project">
     <div class="row">
@@ -117,12 +47,19 @@
           <a href="https://github.com/paige1381/Top-Line-HR" target="_blank">Github</a>
         </div>
       </section>
-      <div class="dim">
+      <div class="dim-left">
         <img class="project-img" src="./css/images/TopLineHR-1.png">
-        <div class="more">
+        <div class="more tablet">
+          <i class="material-icons">chevron_left</i>
           <h1 class="more-text">View More</h1>
-          <i class="material-icons mobile">expand_more</i>
-          <i class="material-icons tablet">chevron_right</i>
+        </div>
+      </div>
+      <div class="img-left">
+        <img class="project-img-more" src="./css/images/TopLineHR-1.png">
+        <img class="project-img-more border" src="./css/images/TopLineHR-2.png">
+        <img class="project-img-more desktop" src="./css/images/TopLineHR-3.png">
+        <div class="less-left">
+          <i class="material-icons">chevron_right</i>
         </div>
       </div>
     </div>
@@ -140,13 +77,20 @@
           <a href="https://github.com/paige1381/kale_kindyl" target="_blank">Github</a>
         </div>
       </section>
-      <div class="dim">
+      <div class="dim-right">
         <img class="project-img" src="./css/images/KaleKindyl-1.png">
-        <div class="more">
+        <div class="more tablet">
           <h1 class="more-text">View More</h1>
-          <i class="material-icons mobile">expand_more</i>
-          <i class="material-icons tablet">chevron_right</i>
+          <i class="material-icons">chevron_right</i>
         </div>
+      </div>
+      <div class="img-right">
+        <div class="less-right">
+          <i class="material-icons">chevron_left</i>
+        </div>
+        <img class="project-img-more desktop" src="./css/images/KaleKindyl-3.png">
+        <img class="project-img-more" src="./css/images/KaleKindyl-2.png">
+        <img class="project-img-more border" src="./css/images/KaleKindyl-1.png">
       </div>
     </div>
   </div>
@@ -165,17 +109,116 @@
           <a href="https://github.com/paige1381/feed-me-clarity" target="_blank">Github</a>
         </div>
       </section>
-      <div class="dim">
+      <div class="dim-left">
         <img class="project-img" src="./css/images/FeedMeClarity-1.png">
-        <div class="more">
+        <div class="more tablet">
+          <i class="material-icons">chevron_left</i>
           <h1 class="more-text">View More</h1>
-          <i class="material-icons mobile">expand_more</i>
-          <i class="material-icons tablet">chevron_right</i>
+        </div>
+      </div>
+      <div class="img-left">
+        <img class="project-img-more" src="./css/images/FeedMeClarity-1.png">
+        <img class="project-img-more border" src="./css/images/FeedMeClarity-2.png">
+        <img class="project-img-more desktop" src="./css/images/FeedMeClarity-3.png">
+        <div class="less-left">
+          <i class="material-icons">chevron_right</i>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="project">
+    <div class="row">
+      <section>
+        <h1 class="heading">Wedding Website</h1>
+        <p class="content">
+          This website was built for my two friends and their upcoming wedding. To help them with the wish for a paperless wedding, guests can send their rsvps through the site as long as they provide a valid email to associate with the invite. It's also fully responsive on mobile and tablet devices.
+        </p>
+        <h2 class="sub-heading">AngularJS, Ruby on Rails, PostgreSQL</h2>
+        <div class="links">
+          <a href="https://github.com/paige1381/georgia-maxwell-wedding" target="_blank">Github</a>
+          <a href="http://www.georgiaandmaxwell.com/" target="_blank">Live Site</a>
+        </div>
+      </section>
+      <div class="dim-right">
+        <img class="project-img" src="./css/images/wedding-1.png">
+        <div class="more tablet">
+          <h1 class="more-text">View More</h1>
+          <i class="material-icons">chevron_right</i>
+        </div>
+      </div>
+      <div class="img-right">
+        <div class="less-right">
+          <i class="material-icons">chevron_left</i>
+        </div>
+        <img class="project-img-more desktop" src="./css/images/wedding-3.png">
+        <img class="project-img-more" src="./css/images/wedding-2.png">
+        <img class="project-img-more border" src="./css/images/wedding-1.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="row">
+      <section>
+        <h1 class="heading">pitched</h1>
+        <p class="content">
+          pitched is a campsite review app built for a course project to practice using EJS and MVC architecture. Users can register with the site and post their own pictures and thoughts on camping spots. Members of the site also have the ability to delete and edit their own reviews and comment on others.
+        </p>
+        <h2 class="sub-heading">Express, Bootstrap, EJS, Node.js, MongoDB</h2>
+        <div class="links">
+          <a href="https://github.com/paige1381/pitched" target="_blank">Github</a>
+          <a href="https://pitched-app.herokuapp.com/reviews" target="_blank">Live Site</a>
+        </div>
+      </section>
+      <div class="dim-left">
+        <img class="project-img" src="./css/images/pitched-1.png">
+        <div class="more tablet">
+          <i class="material-icons">chevron_left</i>
+          <h1 class="more-text">View More</h1>
+        </div>
+      </div>
+      <div class="img-left">
+        <img class="project-img-more" src="./css/images/pitched-1.png">
+        <img class="project-img-more border" src="./css/images/pitched-2.png">
+        <img class="project-img-more desktop" src="./css/images/pitched-3.png">
+        <div class="less-left">
+          <i class="material-icons">chevron_right</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="row">
+      <section>
+        <h1 class="heading">Mancala</h1>
+        <p class="content">
+          An interactive mancala game for your desktop created as part of a course project to demonstrate the use of jQuery. This is meant to be a 2-player game, where marbles are moved around the virtual game board with a single click.
+        </p>
+        <h2 class="sub-heading">HTML, CSS, JavaScript, JQuery</h2>
+        <div class="links">
+          <a href="https://github.com/paige1381/Mancala" target="_blank">Github</a>
+          <a href="https://paige1381.github.io/Mancala/" target="_blank">Live Site</a>
+        </div>
+      </section>
+      <div class="dim-right">
+        <img class="project-img" src="./css/images/Mancala-1.png">
+        <div class="more tablet">
+          <h1 class="more-text">View More</h1>
+          <i class="material-icons">chevron_right</i>
+        </div>
+      </div>
+      <div class="img-right">
+        <div class="less-right">
+          <i class="material-icons">chevron_left</i>
+        </div>
+        <img class="project-img-more desktop" src="./css/images/Mancala-3.png">
+        <img class="project-img-more" src="./css/images/Mancala-2.png">
+        <img class="project-img-more border" src="./css/images/Mancala-1.png">
+      </div>
+    </div>
+  </div>
 
 </main>
 
