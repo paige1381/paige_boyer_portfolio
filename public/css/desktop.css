@@ -8,6 +8,7 @@
   nav {
     font-size: 18px;
     padding-right: 45px;
+    width: 100%;
   }
 
   .about {
@@ -36,7 +37,7 @@
   }
 
   .border-alt {
-    border-left: solid black 2px;  
+    border-left: solid black 2px;
   }
 
   .contact-links {
