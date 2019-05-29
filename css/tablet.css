@@ -30,7 +30,7 @@
     flex-direction: row;
   }
 
-  .project:nth-child(even) .row{
+  .project:nth-child(even) .row {
     flex-direction: row-reverse;
   }
 
@@ -42,13 +42,14 @@
     width: 50%;
   }
 
-  .dim-left, .dim-right {
+  .dim-left,
+  .dim-right {
     width: 50%;
     height: 500px;
   }
 
   .project-img {
-    opacity: .7;
+    opacity: 0.7;
   }
 
   .project-img-more {
@@ -56,6 +57,15 @@
     height: 100%;
     object-fit: cover;
     object-position: 0 0;
+    opacity: 1;
+    height: 500px;
+    position: relative;
+  }
+
+  .chelsea-img-more {
+    width: 50%;
+    height: 100%;
+    object-fit: scale-down;
     opacity: 1;
     height: 500px;
     position: relative;
@@ -91,14 +101,15 @@
     flex-direction: row;
     justify-content: flex-start;
     position: absolute;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     z-index: 2;
     top: 0;
     right: -100%;
+    background-color: black;
   }
 
   .img-right {
@@ -107,11 +118,11 @@
     flex-direction: row;
     justify-content: flex-start;
     position: absolute;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     z-index: 2;
     top: 0;
     left: -100%;
@@ -129,12 +140,13 @@
     position: relative;
   }
 
-  .less-left, .less-right {
+  .less-left,
+  .less-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     cursor: pointer;
     height: 100%;
@@ -172,5 +184,4 @@
   .desktop {
     display: none;
   }
-
 }

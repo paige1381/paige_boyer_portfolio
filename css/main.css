@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -6,16 +8,15 @@
   overflow-x: hidden;
 }
 
-
 *:focus {
   outline: none;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   width: 100%;
-  background-color: #EBE3E0;
+  background-color: #ebe3e0;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 20px;
@@ -36,7 +37,7 @@ nav {
   position: fixed;
   z-index: 6;
   width: 100%;
-  background-color: #EBE3E0;
+  background-color: #ebe3e0;
 }
 
 a {
@@ -45,7 +46,7 @@ a {
 }
 
 a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .about {
@@ -63,7 +64,7 @@ a:hover {
 }
 
 .name {
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255, 255, 255, 0.4);
   width: 80%;
   padding: 10px 15px;
   margin: 70px 0 0 0;
@@ -96,16 +97,16 @@ section {
   padding-bottom: 70px;
 }
 
-.project:nth-child(3n+1) {
-  background-color: #F8B78D;
+.project:nth-child(3n + 1) {
+  background-color: #f8b78d;
 }
 
-.project:nth-child(3n+2) {
-  background-color: rgba(211,154,45,.9);
+.project:nth-child(3n + 2) {
+  background-color: rgba(211, 154, 45, 0.9);
 }
 
-.project:nth-child(3n+3) {
-  background-color: rgba(75,97,81,.7);
+.project:nth-child(3n + 3) {
+  background-color: rgba(75, 97, 81, 0.7);
 }
 
 .row {
@@ -115,7 +116,8 @@ section {
   overflow-y: hidden;
 }
 
-.sub-heading, .links > a {
+.sub-heading,
+.links > a {
   margin: 15px 0 5px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -140,7 +142,8 @@ section {
   font-size: 16px;
 }
 
-.dim-left, .dim-right {
+.dim-left,
+.dim-right {
   display: flex;
   width: 100%;
   height: 350px;
@@ -160,6 +163,12 @@ section {
   object-position: 0 0;
 }
 
+.chelsea-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -168,7 +177,7 @@ footer {
 .contact-links {
   display: flex;
   flex-direction: row;
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255, 255, 255, 0.4);
   justify-content: flex-end;
   width: 80%;
   align-self: flex-end;
@@ -195,7 +204,8 @@ h6 {
   font-size: 8px;
 }
 
-.tablet, .desktop {
+.tablet,
+.desktop {
   display: none;
 }
 
